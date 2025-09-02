@@ -2,15 +2,15 @@
 - AI is focused on creating systems that mimic human intelligence.
 - Machine Learning (ML) is a subset of AI which learns patterns from underlying data using specific algorithms.
 - ML algorigthm can be classified majorly into:
-    -    Discriminative: Helps to Learn from Underlying data to classify or Predict.
-    -    Generative : Helps to generate/replicate basis the underlying distribution of data.
-- Generative Algorigthm can be classified into Classical & MOdern
-- Modern Algorithms:
+    -    **Discriminative**: Helps to Learn from Underlying data to classify or Predict.
+    -    **Generative** : Helps to generate/replicate basis the underlying distribution of data.
+- **Generative Algorigthms** can be classified into Classical & **Modern**
+- **Modern Algorithms**:
     - [Variational Auto Encoders](https://www.ibm.com/think/topics/variational-autoencoder)
     - [Generative Adverserial Networks](https://aws.amazon.com/what-is/gan/)
     - [Diffusion Models](https://www.ibm.com/think/topics/diffusion-models)
     - [Autoregressive Models](https://aws.amazon.com/what-is/autoregressive-models/) - which generates data by predicting based on the previous elements.
-    - Most of the Gen AI models (not all) are based on AutoRegressive Algorithms
+    - **Most of the Gen AI models (not all) are based on AutoRegressive Algorithms**
 
 
 ## AI Model Classification
