@@ -124,10 +124,10 @@
 | **Example**      | AI avoids racial bias in hiring         | AI explains why candidate was selected |
 
 
-## AI Model Classification
+## LLM Classifications
 <img width="512" height="512" alt="ChatGPT Image Sep 2, 2025, 10_11_34 PM" src="https://github.com/user-attachments/assets/bfdeb219-8fed-400d-96f4-873668a51452" />
 
-### Classification Definition:
+### LLM Classification Definition:
 
 | **Category**          | **Definition**                                                                                                                                                         | **Analogy**                                                                                      |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -136,7 +136,7 @@
 | **Task Models**       | Specialized models fine-tuned or designed for specific domains or tasks (e.g., coding, vision, speech, science). Often derived from foundation models.                 | 👨‍🔧 **Like a skilled specialist** — trained to excel at a specific task.                       |
 
 
-### AI Models Types -Use Case n Hosting:
+### Models Types -Use Case n Hosting:
 <img width="512" height="512" alt="ChatGPT Image Sep 2, 2025, 09_47_21 PM" src="https://github.com/user-attachments/assets/a28fd459-acb1-44af-b863-642a93d357eb" />
 
 <table border=0 style="background-color:red">
