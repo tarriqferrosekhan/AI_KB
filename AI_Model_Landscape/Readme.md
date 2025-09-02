@@ -71,23 +71,42 @@
             <td> Ollama, vLLM, Hugging Face TGI</td>
       </tr>
       <tr><td> <b>Task Models – Vision</b></td>
-        <td> Stable Diffusion, Meta SAM, Google Imagen, DINOv2, DALL·E                                           </td><td> Mix         </td><td> Image generation, segmentation, object detection </td><td> ✅ Yes (Stable Diffusion, SAM, DINOv2); ❌ Imagen, DALL·E </td><td> **Automatic1111**, **ComfyUI**, Hugging Face Diffusers                                     </td></tr>
-<tr><td> **Task Models – Speech/Audio**                       </td><td> Whisper (OpenAI), Meta MMS, WaveNet, AudioLM, ElevenLabs TTS                                        </td><td> Mix         </td><td> Speech-to-text, transcription, TTS               </td><td> ✅ Whisper, MMS; ❌ WaveNet, AudioLM, ElevenLabs          </td><td> **Whisper.cpp**, **SpeechBrain**, Hugging Face Transformers                                </td></tr>
-<tr><td> **Task Models – Multimodal**                         </td><td> Kosmos-2 (MSR), IDEFICS (Hugging Face), GPT-4o, Gemini 1.5                                          </td><td> Mix         </td><td> Image + text + audio assistants                  </td><td> ✅ Kosmos-2, IDEFICS; ❌ GPT-4o, Gemini                   </td><td> Hugging Face TGI, **Ollama (multi-modal support emerging)**                                </td></tr>
-<tr><td> **Task Models – Science/Medicine**                   </td><td> AlphaFold (DeepMind), BioGPT, Med-PaLM 2                                                            </td><td> Mix         </td><td> Protein folding, biomedical NLP                  </td><td> ✅ BioGPT; ⚠️ AlphaFold (very GPU-heavy); ❌ Med-PaLM 2   </td><td> **AlphaFold GitHub release**, Hugging Face Transformers                                    </td></tr>
-<tr><td> **Task Models – Embeddings / Retrieval**             </td><td> Sentence-BERT, E5, OpenAI Embeddings, Cohere Embeddings                                             </td><td> Mix         </td><td> Semantic search, RAG, clustering                 </td><td> ✅ SBERT, E5; ❌ OpenAI/Cohere embeddings                 </td><td> **SentenceTransformers (Python)**, Hugging Face Inference, **LangChain + LocalEmbeddings** </td></tr>
+        <td> Stable Diffusion, Meta SAM, Google Imagen, DINOv2, DALL·E</td>
+        <td> Mix         </td>
+        <td> Image generation, segmentation, object detection </td>
+        <td> ✅ Yes (Stable Diffusion, SAM, DINOv2); ❌ Imagen, DALL·E </td>
+        <td> **Automatic1111**, **ComfyUI**, Hugging Face Diffusers</td>
+    </tr>
+    <tr>
+          <td> <b>Task Models – Speech/Audio</b></td>
+          <td> Whisper (OpenAI), Meta MMS, WaveNet, AudioLM, ElevenLabs TTS</td>
+          <td> Mix</td>
+          <td> Speech-to-text, transcription, TTS</td>
+          <td> ✅ Whisper, MMS; ❌ WaveNet, AudioLM, ElevenLabs</td>
+          <td> **Whisper.cpp**, **SpeechBrain**, Hugging Face Transformers</td>
+    </tr>
+    <tr>
+          <td> <b>Task Models – Multimodal</b></td>
+          <td> Kosmos-2 (MSR), IDEFICS (Hugging Face), GPT-4o, Gemini 1.5</td>
+          <td> Mix</td>
+          <td> Image + text + audio assistants                  </td>
+          <td> ✅ Kosmos-2, IDEFICS; ❌ GPT-4o, Gemini         </td>
+          <td> Hugging Face TGI, **Ollama (multi-modal support emerging)**</td>
+    </tr>
+    <tr>
+        <td> **Task Models – Science/Medicine**</td>
+        <td> AlphaFold (DeepMind), BioGPT, Med-PaLM 2</td>
+        <td> Mix</td>
+        <td> Protein folding, biomedical NLP</td>
+        <td> ✅ BioGPT; ⚠️ AlphaFold (very GPU-heavy); ❌ Med-PaLM 2</td>
+        <td> **AlphaFold GitHub release**, Hugging Face Transformers</td>
+    </tr>
+    <tr>
+        <td> <b>Task Models – Embeddings / Retrieval</b></td>
+        <td> Sentence-BERT, E5, OpenAI Embeddings, Cohere Embeddings</td>
+        <td> Mix</td>
+        <td> Semantic search, RAG, clustering</td>
+        <td> ✅ SBERT, E5; ❌ OpenAI/Cohere embeddings</td>
+        <td> **SentenceTransformers (Python)**, Hugging Face Inference, **LangChain + LocalEmbeddings** </td>
+    </tr>
 </table>
-
-
-
-#####
-| **Category**                                         | **Examples**                                                                                        | **Type**    | **Typical Use Cases**                            | **Local Hosting?**                                      | **Recommended Frameworks**                                                                 |
-| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ----------- | ------------------------------------------------ | ------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| **Foundation Models (General Purpose, Open Source)** | [LLaMA 2/3 (Meta)](https://www.llama.com/), [Mistral/Mixtral](https://mistral.ai/news/mixtral-of-experts), Falcon 40B/180B, BLOOM, Gemma (Google), MPT (Databricks)         | Open Source | Text generation, RAG, fine-tuning                | ✅ Yes                                                   | **Ollama**, **vLLM**, **llama.cpp**, Hugging Face **TGI**, **Text Generation WebUI**       |
-| **Industry Foundation Models (Proprietary)**         | GPT-4o, GPT-3.5 (OpenAI), Claude 3 (Anthropic), Gemini 1.5 (Google), Cohere Command R+, IBM Granite | Proprietary | Copilots, enterprise automation, chatbots        | ❌ No (API/cloud only)                                   | N/A (hosted via API, e.g. Azure, AWS Bedrock)                                              |
-| **Task Models – Code**                               | Code LLaMA, Codestral, StarCoder, WizardCoder, PolyCoder                                            | Mix         | Code generation, debugging                       | ✅ Yes (for open-source ones)                            | Ollama, vLLM, Hugging Face TGI                                                             |
-| **Task Models – Vision**                             | Stable Diffusion, Meta SAM, Google Imagen, DINOv2, DALL·E                                           | Mix         | Image generation, segmentation, object detection | ✅ Yes (Stable Diffusion, SAM, DINOv2); ❌ Imagen, DALL·E | **Automatic1111**, **ComfyUI**, Hugging Face Diffusers                                     |
-| **Task Models – Speech/Audio**                       | Whisper (OpenAI), Meta MMS, WaveNet, AudioLM, ElevenLabs TTS                                        | Mix         | Speech-to-text, transcription, TTS               | ✅ Whisper, MMS; ❌ WaveNet, AudioLM, ElevenLabs          | **Whisper.cpp**, **SpeechBrain**, Hugging Face Transformers                                |
-| **Task Models – Multimodal**                         | Kosmos-2 (MSR), IDEFICS (Hugging Face), GPT-4o, Gemini 1.5                                          | Mix         | Image + text + audio assistants                  | ✅ Kosmos-2, IDEFICS; ❌ GPT-4o, Gemini                   | Hugging Face TGI, **Ollama (multi-modal support emerging)**                                |
-| **Task Models – Science/Medicine**                   | AlphaFold (DeepMind), BioGPT, Med-PaLM 2                                                            | Mix         | Protein folding, biomedical NLP                  | ✅ BioGPT; ⚠️ AlphaFold (very GPU-heavy); ❌ Med-PaLM 2   | **AlphaFold GitHub release**, Hugging Face Transformers                                    |
-| **Task Models – Embeddings / Retrieval**             | Sentence-BERT, E5, OpenAI Embeddings, Cohere Embeddings                                             | Mix         | Semantic search, RAG, clustering                 | ✅ SBERT, E5; ❌ OpenAI/Cohere embeddings                 | **SentenceTransformers (Python)**, Hugging Face Inference, **LangChain + LocalEmbeddings** |
