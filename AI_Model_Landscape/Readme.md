@@ -8,22 +8,46 @@
     -    **Discriminative**: Helps to Learn from Underlying data to classify or Predict.
     -    **Generative** : Helps to generate/replicate basis the underlying distribution of data.
 - **Generative Algorigthms** can be classified into Classical & **Modern**
-- **Modern Algorithms**:
+## Modern Algorithms
     - [Variational Auto Encoders](https://www.ibm.com/think/topics/variational-autoencoder)
     - [Generative Adverserial Networks](https://aws.amazon.com/what-is/gan/)
     - [Diffusion Models](https://www.ibm.com/think/topics/diffusion-models)
     - [Autoregressive Models](https://aws.amazon.com/what-is/autoregressive-models/) - generate outputs one token at a time, each step depending on the previously generated tokens.
     - **Most of the Gen AI models (not all) are based on AutoRegressive Algorithms**
 
-### Large Language Model (LLM)
+### Large Language Model (LLM) Introduction
 - Is an AI system **Pre-trained** on vast amounts of text data that learns the statistical relationships between words and phrases.
 - Fine-tuned to follow instructions, be safe, and helpful.
 - It predicts the most likely next word (or sequence of words), enabling it to generate human-like text, answer questions, translate, summarize, and even reason.
 - Examples: GPT (OpenAI), Claude (Anthropic), Gemini (Google DeepMind), LLaMA (Meta).
 
+<img width="256" height="256" alt="LLM Overview" src="https://github.com/user-attachments/assets/e69e29f0-65a2-43bb-bf68-b558940d9713" />
+
+### Tokens in an LLM
+- A token is a small unit of text that an LLM processes.
+- The model doesn’t see words, it sees tokens.
+- Each token is mapped into a high-dimensional vector space called **Embeddings**
+- **Context Length**: LLMs can only “remember” a limited number of tokens in one go
+
+### Parameters in an LLM
+- Parameters are the weights & biases of the neural network.
+- They define how input tokens are transformed into meaningful output. 
+- Process steps:
+    - Initially They are set as Random numbers , Example: In GPT-3 (175B parameters), all 175 billion weights start as random values.
+    - Training:
+        - Input tokens → embeddings → pass through Transformer layers.
+        - Model predicts the next token (autoregressive), compares prediction with the actual token (from dataset) and Compute loss (error).
+        - Use backpropagation + [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) to adjust weights.
+        - After a trillions of steps, the parameters shift from random values to values that actually capture grammar, facts, reasoning patterns, etc.
+- Fine-Tuning (Optional)
+    - Base LLM (foundation model) can be further tuned:
+    - Instruction tuning (makes it follow human commands).
+    - RLHF (Reinforcement Learning with Human Feedback) (aligns responses to preferences).
+    - Domain-specific tuning (e.g., legal, medical).
+
 ### GPTs Vs LLM
-- All GPTs are LLMs, but not all LLMs are GPTs
-- GPTs are specific instance of LLMs
+- Generative Pre-Trained Transformers  are specific instance of LLMs
+- In short : All GPTs are LLMs, but not all LLMs are GPTs.
 
 | **Aspect**       | **LLM (Large Language Model)**                                                                       | **GPT (Generative Pretrained Transformer)**                                           |
 | ---------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
@@ -36,7 +60,13 @@
 | **Analogy**      | LLM is like saying “car” (general category).                                                         | GPT is like saying “Tesla” (a specific brand of car within the category).             |
 
 
-### Transformer Algorithm Summary
+### Transformer Model Overview
+- A Transformer is a type of neural network architecture introduced in the paper “[Attention is All You Need](https://arxiv.org/abs/1706.03762)” (2017).
+- Old Models are sequence models - RNNs, LSTMs, or CNNs and were slow in training, hard to parallelize.
+- Transformer Model removes recurrence entirely, relies only on **self-attention mechanisms** to process sequences, making training faster, parallelizable, and effective at capturing long dependencies.
+<img width="256" height="512" alt="Transformer Models" src="https://github.com/user-attachments/assets/fd92ea07-a5de-4365-9380-90a6f14026ad" />
+
+
 
 ## AI Model Classification
 <img width="512" height="512" alt="ChatGPT Image Sep 2, 2025, 10_11_34 PM" src="https://github.com/user-attachments/assets/bfdeb219-8fed-400d-96f4-873668a51452" />
