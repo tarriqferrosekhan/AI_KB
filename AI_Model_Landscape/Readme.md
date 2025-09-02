@@ -1,3 +1,6 @@
+
+# Deep Dive into Gen AI
+
 ## Gen AI Introduction
 - AI is focused on creating systems that mimic human intelligence.
 - Machine Learning (ML) is a subset of AI which learns patterns from underlying data using specific algorithms.
@@ -9,9 +12,31 @@
     - [Variational Auto Encoders](https://www.ibm.com/think/topics/variational-autoencoder)
     - [Generative Adverserial Networks](https://aws.amazon.com/what-is/gan/)
     - [Diffusion Models](https://www.ibm.com/think/topics/diffusion-models)
-    - [Autoregressive Models](https://aws.amazon.com/what-is/autoregressive-models/) - which generates data by predicting based on the previous elements.
+    - [Autoregressive Models](https://aws.amazon.com/what-is/autoregressive-models/) - generate outputs one token at a time, each step depending on the previously generated tokens.
     - **Most of the Gen AI models (not all) are based on AutoRegressive Algorithms**
 
+### Large Language Model (LLM)
+- Is an AI system **Pre-trained** on vast amounts of text data that learns the statistical relationships between words and phrases.
+- Fine-tuned to follow instructions, be safe, and helpful.
+- It predicts the most likely next word (or sequence of words), enabling it to generate human-like text, answer questions, translate, summarize, and even reason.
+- Examples: GPT (OpenAI), Claude (Anthropic), Gemini (Google DeepMind), LLaMA (Meta).
+
+### GPTs Vs LLM
+- All GPTs are LLMs, but not all LLMs are GPTs
+- GPTs are specific instance of LLMs
+
+| **Aspect**       | **LLM (Large Language Model)**                                                                       | **GPT (Generative Pretrained Transformer)**                                           |
+| ---------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Definition**   | Any AI model trained on massive amounts of text data to understand and generate human-like language. | A specific family of LLMs developed by OpenAI, based on the Transformer architecture. |
+| **Scope**        | General term – includes GPT, Claude, LLaMA, PaLM, Gemini, Mistral, etc.                              | A subset of LLMs – GPT-1, GPT-2, GPT-3, GPT-3.5, GPT-4, GPT-5.                        |
+| **Architecture** | Most are Transformer-based, but LLM is a broader concept (not tied to one vendor).                   | Strictly Transformer-based with autoregressive training.                              |
+| **Training**     | Trained on huge text corpora, sometimes multimodal (text, images, code, audio).                      | Pretrained on diverse internet-scale datasets, optimized by OpenAI.                   |
+| **Use Cases**    | Chatbots, translation, summarization, coding assistants, knowledge retrieval, reasoning tasks.       | ChatGPT, Copilot, Codex, and other OpenAI products/services.                          |
+| **Ownership**    | Open source (LLaMA, Falcon, Mistral, etc.) + proprietary (Claude, Gemini, GPT).                      | Proprietary by OpenAI (though older GPT models are partially open).                   |
+| **Analogy**      | LLM is like saying “car” (general category).                                                         | GPT is like saying “Tesla” (a specific brand of car within the category).             |
+
+
+### Transformer Algorithm Summary
 
 ## AI Model Classification
 <img width="512" height="512" alt="ChatGPT Image Sep 2, 2025, 10_11_34 PM" src="https://github.com/user-attachments/assets/bfdeb219-8fed-400d-96f4-873668a51452" />
