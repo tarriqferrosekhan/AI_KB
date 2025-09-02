@@ -3,7 +3,7 @@
 <img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/15c67450-0ed7-4deb-9375-3e7e04cb5f9b" />
 
 
-# Deep Dive into Gen AI & Large Language Models
+# Deep Dive into Gen AI & Large Language Models (Part 1)
 
 **Topics**<br>
 [Gen AI Introduction](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#gen-ai-introduction)<br>
