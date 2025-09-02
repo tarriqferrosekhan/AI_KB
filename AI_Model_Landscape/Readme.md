@@ -32,18 +32,26 @@
 ### Parameters in an LLM
 - Parameters are the weights & biases of the neural network.
 - They define how input tokens are transformed into meaningful output. 
-- Process steps:
-    - Initially They are set as Random numbers , Example: In GPT-3 (175B parameters), all 175 billion weights start as random values.
-    - Training:
+- **Parameter Generation Process steps**:
+    - **Initialization**: Initially They are set as Random numbers , Example: In GPT-3 (175B parameters), all 175 billion weights start as random values.
+    - **Training**:
         - Input tokens → embeddings → pass through Transformer layers.
         - Model predicts the next token (autoregressive), compares prediction with the actual token (from dataset) and Compute loss (error).
         - Use backpropagation + [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) to adjust weights.
         - After a trillions of steps, the parameters shift from random values to values that actually capture grammar, facts, reasoning patterns, etc.
-- Fine-Tuning (Optional)
+- **Fine-Tuning** (Optional)
     - Base LLM (foundation model) can be further tuned:
     - Instruction tuning (makes it follow human commands).
     - RLHF (Reinforcement Learning with Human Feedback) (aligns responses to preferences).
     - Domain-specific tuning (e.g., legal, medical).
+
+## Types of Parameters in an LLM
+| **Category**                                        | **Examples**                                                        |
+| --------------------------------------------------- | ------------------------------------------------------------------- |
+| **Model Parameters** (learned)                      | Weights, biases, embeddings, attention matrices                     |
+| **Hyperparameters** (fixed at training)             | Layers, hidden size, attention heads, context length, learning rate |
+| **Decoding Parameters** (user-defined at inference) | Temperature, Top-K, Top-P, max tokens, repetition penalty           |
+
 
 ### GPTs Vs LLM
 - Generative Pre-Trained Transformers  are specific instance of LLMs
