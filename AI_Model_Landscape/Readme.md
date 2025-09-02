@@ -1,7 +1,7 @@
 #Author : [Tarriq Ferrose Khan](www.linkedin.com/in/tarriq-ferrose-khan-ba527080) 
 
 
-# Deep Dive into Gen AI
+# Deep Dive into Gen AI and LLMs
 
 ## Gen AI Introduction
 - AI is focused on creating systems that mimic human intelligence.
@@ -24,6 +24,27 @@
 - Examples: GPT (OpenAI), Claude (Anthropic), Gemini (Google DeepMind), LLaMA (Meta).
 
 <img width="256" height="256" alt="LLM Overview" src="https://github.com/user-attachments/assets/e69e29f0-65a2-43bb-bf68-b558940d9713" />
+
+### GPTs Vs LLM
+- Generative Pre-Trained Transformers  are specific instance of LLMs
+- In short : All GPTs are LLMs, but not all LLMs are GPTs.
+
+| **Aspect**       | **LLM (Large Language Model)**                                                                       | **GPT (Generative Pretrained Transformer)**                                           |
+| ---------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Definition**   | Any AI model trained on massive amounts of text data to understand and generate human-like language. | A specific family of LLMs developed by OpenAI, based on the Transformer architecture. |
+| **Scope**        | General term – includes GPT, Claude, LLaMA, PaLM, Gemini, Mistral, etc.                              | A subset of LLMs – GPT-1, GPT-2, GPT-3, GPT-3.5, GPT-4, GPT-5.                        |
+| **Architecture** | Most are Transformer-based, but LLM is a broader concept (not tied to one vendor).                   | Strictly Transformer-based with autoregressive training.                              |
+| **Training**     | Trained on huge text corpora, sometimes multimodal (text, images, code, audio).                      | Pretrained on diverse internet-scale datasets, optimized by OpenAI.                   |
+| **Use Cases**    | Chatbots, translation, summarization, coding assistants, knowledge retrieval, reasoning tasks.       | ChatGPT, Copilot, Codex, and other OpenAI products/services.                          |
+| **Ownership**    | Open source (LLaMA, Falcon, Mistral, etc.) + proprietary (Claude, Gemini, GPT).                      | Proprietary by OpenAI (though older GPT models are partially open).                   |
+| **Analogy**      | LLM is like saying “car” (general category).                                                         | GPT is like saying “Tesla” (a specific brand of car within the category).             |
+
+### Transformer Model Overview
+- A Transformer is a type of neural network architecture introduced in the paper “[Attention is All You Need](https://arxiv.org/abs/1706.03762)” (2017).
+- Old Models are sequence models - RNNs, LSTMs, or CNNs and were slow in training, hard to parallelize.
+- Transformer Model removes recurrence entirely, relies only on **self-attention mechanisms** to process sequences, making training faster, parallelizable, and effective at capturing long dependencies.
+<img width="256" height="512" alt="Transformer Models" src="https://github.com/user-attachments/assets/fd92ea07-a5de-4365-9380-90a6f14026ad" />
+
 
 ### Tokens in an LLM
 - A token is a small unit of text that an LLM processes.
@@ -75,28 +96,30 @@
     - Example: Question: “What is in the picture?” → The image tokens guide the text decoder to produce “A dog sitting on a sofa.”
 - Similarly **Audio** is transformed into Spectrograms - Convert audio into a 2D time–frequency map and **Video** into sequence of images (frames) + optional audio track
 
+### Model Capacity Vs Model Size
 
-### GPTs Vs LLM
-- Generative Pre-Trained Transformers  are specific instance of LLMs
-- In short : All GPTs are LLMs, but not all LLMs are GPTs.
+| **Aspect**        | **Model Size**                                                                            | **Model Capacity**                                                                                                                    |
+| ----------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Definition**    | The total number of parameters in the model (e.g., 7B, 70B, 175B). It’s a *raw count*.    | The model’s actual ability to learn, generalize, and represent complex patterns from data.                                            |
+| **Analogy**       | 💾 **Storage space** on a computer. More gigabytes doesn’t always mean faster or smarter. | 🧠 **Cognitive ability** — how effectively the system uses its storage + processing.                                                  |
+| **Influenced By** | - Number of parameters<br>- Embedding size<br>- Layers                                    | - Model size<br>- Architecture efficiency (e.g., Transformer vs RNN)<br>- Training data quality & diversity<br>- Optimization methods |
+| **Measurement**   | Easy to quantify (just count parameters).                                                 | Harder to measure directly — evaluated via benchmarks, reasoning ability, generalization.                                             |
+| **Limitations**   | Bigger ≠ always better (may overfit, inefficient, costly).                                | A smaller but well-trained model (good data + architecture) can have **higher effective capacity** than a larger poorly trained one.  |
+| **Example**       | GPT-3 = 175B parameters → large size.                                                     | LLaMA-2 13B often outperforms GPT-3 175B on reasoning → higher *effective capacity*.                                                  |
 
-| **Aspect**       | **LLM (Large Language Model)**                                                                       | **GPT (Generative Pretrained Transformer)**                                           |
-| ---------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| **Definition**   | Any AI model trained on massive amounts of text data to understand and generate human-like language. | A specific family of LLMs developed by OpenAI, based on the Transformer architecture. |
-| **Scope**        | General term – includes GPT, Claude, LLaMA, PaLM, Gemini, Mistral, etc.                              | A subset of LLMs – GPT-1, GPT-2, GPT-3, GPT-3.5, GPT-4, GPT-5.                        |
-| **Architecture** | Most are Transformer-based, but LLM is a broader concept (not tied to one vendor).                   | Strictly Transformer-based with autoregressive training.                              |
-| **Training**     | Trained on huge text corpora, sometimes multimodal (text, images, code, audio).                      | Pretrained on diverse internet-scale datasets, optimized by OpenAI.                   |
-| **Use Cases**    | Chatbots, translation, summarization, coding assistants, knowledge retrieval, reasoning tasks.       | ChatGPT, Copilot, Codex, and other OpenAI products/services.                          |
-| **Ownership**    | Open source (LLaMA, Falcon, Mistral, etc.) + proprietary (Claude, Gemini, GPT).                      | Proprietary by OpenAI (though older GPT models are partially open).                   |
-| **Analogy**      | LLM is like saying “car” (general category).                                                         | GPT is like saying “Tesla” (a specific brand of car within the category).             |
+### Model Cards
+- A Model Card is a structured documentation template (proposed by Google AI in 2019) that provides key details about an ML model’s development, intended use, performance, risks, and limitations.
+- **It’s like a “nutrition label” for AI models.**
 
+### Responsible AI vs Explainable AI
 
-### Transformer Model Overview
-- A Transformer is a type of neural network architecture introduced in the paper “[Attention is All You Need](https://arxiv.org/abs/1706.03762)” (2017).
-- Old Models are sequence models - RNNs, LSTMs, or CNNs and were slow in training, hard to parallelize.
-- Transformer Model removes recurrence entirely, relies only on **self-attention mechanisms** to process sequences, making training faster, parallelizable, and effective at capturing long dependencies.
-<img width="256" height="512" alt="Transformer Models" src="https://github.com/user-attachments/assets/fd92ea07-a5de-4365-9380-90a6f14026ad" />
-
+| Aspect           | Responsible AI                          | Explainable AI                         |
+| ---------------- | --------------------------------------- | -------------------------------------- |
+| **Definition**   | Ethical + safe AI development and use   | Making AI decisions understandable     |
+| **Focus**        | Governance, fairness, accountability    | Interpretability, transparency         |
+| **Scope**        | Broad (policy, ethics, law, operations) | Narrower (technical model insights)    |
+| **Who benefits** | Society, policymakers, organizations    | End-users, developers, regulators      |
+| **Example**      | AI avoids racial bias in hiring         | AI explains why candidate was selected |
 
 
 ## AI Model Classification
@@ -211,4 +234,4 @@
     </tr>
 </table>
 
-### Comprehensive set of AI Tools by XPloria: https://www.aixploria.com/en/ultimate-list-ai/
+### AI Tools by XPloria: https://www.aixploria.com/en/ultimate-list-ai/
