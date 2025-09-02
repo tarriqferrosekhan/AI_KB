@@ -1,8 +1,3 @@
-<table border=0 style="font-size:px">
-  <tr>
-    <td>test</td>
-  </tr>
-</table>
 ## AI Model Landscape Classification
 <img width="512" height="512" alt="ChatGPT Image Sep 2, 2025, 10_11_34 PM" src="https://github.com/user-attachments/assets/bfdeb219-8fed-400d-96f4-873668a51452" />
 
@@ -71,11 +66,15 @@
             <td> Ollama, vLLM, Hugging Face TGI</td>
       </tr>
       <tr><td> <b>Task Models – Vision</b></td>
-        <td> Stable Diffusion, Meta SAM, Google Imagen, DINOv2, DALL·E</td>
+        <td> <a href="https://stablediffusionweb.com/">Stable Diffusion</a>, Meta SAM, Google Imagen, DINOv2, DALL·E</td>
         <td> Mix         </td>
         <td> Image generation, segmentation, object detection </td>
         <td> ✅ Yes (Stable Diffusion, SAM, DINOv2); ❌ Imagen, DALL·E </td>
-        <td> **Automatic1111**, **ComfyUI**, Hugging Face Diffusers</td>
+        <td> 
+          <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Automatic1111</a><br>
+          <a href="https://www.comfy.org/">ComfyUI</a><br>
+          <a href="https://huggingface.co/docs/diffusers/en/index">Hugging Face Diffusers</a><br>
+        </td>
     </tr>
     <tr>
           <td> <b>Task Models – Speech/Audio</b></td>
@@ -83,7 +82,7 @@
           <td> Mix</td>
           <td> Speech-to-text, transcription, TTS</td>
           <td> ✅ Whisper, MMS; ❌ WaveNet, AudioLM, ElevenLabs</td>
-          <td> **Whisper.cpp**, **SpeechBrain**, Hugging Face Transformers</td>
+          <td> Whisper.cpp, <a href="https://speechbrain.github.io/">SpeechBrain</a>, Hugging Face Transformers</td>
     </tr>
     <tr>
           <td> <b>Task Models – Multimodal</b></td>
@@ -94,12 +93,12 @@
           <td> Hugging Face TGI, **Ollama (multi-modal support emerging)**</td>
     </tr>
     <tr>
-        <td> **Task Models – Science/Medicine**</td>
+        <td> <a>Task Models – Science/Medicine</a></td>
         <td> AlphaFold (DeepMind), BioGPT, Med-PaLM 2</td>
         <td> Mix</td>
         <td> Protein folding, biomedical NLP</td>
         <td> ✅ BioGPT; ⚠️ AlphaFold (very GPU-heavy); ❌ Med-PaLM 2</td>
-        <td> **AlphaFold GitHub release**, Hugging Face Transformers</td>
+        <td> AlphaFold GitHub release, Hugging Face Transformers</td>
     </tr>
     <tr>
         <td> <b>Task Models – Embeddings / Retrieval</b></td>
@@ -107,6 +106,6 @@
         <td> Mix</td>
         <td> Semantic search, RAG, clustering</td>
         <td> ✅ SBERT, E5; ❌ OpenAI/Cohere embeddings</td>
-        <td> **SentenceTransformers (Python)**, Hugging Face Inference, **LangChain + LocalEmbeddings** </td>
+        <td> SentenceTransformers (Python), Hugging Face Inference, LangChain + LocalEmbeddings ,LLAMAIndex </td>
     </tr>
 </table>
