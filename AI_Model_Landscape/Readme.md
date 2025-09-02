@@ -11,11 +11,11 @@
     -    **Generative** : Helps to generate/replicate basis the underlying distribution of data.
 - **Generative Algorigthms** can be classified into Classical & **Modern**
 ## Modern Algorithms
-    - [Variational Auto Encoders](https://www.ibm.com/think/topics/variational-autoencoder)
-    - [Generative Adverserial Networks](https://aws.amazon.com/what-is/gan/)
-    - [Diffusion Models](https://www.ibm.com/think/topics/diffusion-models)
-    - [Autoregressive Models](https://aws.amazon.com/what-is/autoregressive-models/) - generate outputs one token at a time, each step depending on the previously generated tokens.
-    - **Most of the Gen AI models (not all) are based on AutoRegressive Algorithms**
+- [Variational Auto Encoders](https://www.ibm.com/think/topics/variational-autoencoder)
+- [Generative Adverserial Networks](https://aws.amazon.com/what-is/gan/)
+- [Diffusion Models](https://www.ibm.com/think/topics/diffusion-models)
+- [Autoregressive Models](https://aws.amazon.com/what-is/autoregressive-models/) - generate outputs one token at a time, each step depending on the previously generated tokens.
+- **Most of the Gen AI models (not all) are based on AutoRegressive Algorithms**
 
 ### Large Language Model (LLM) Introduction
 - Is an AI system **Pre-trained** on vast amounts of text data that learns the statistical relationships between words and phrases.
