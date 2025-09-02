@@ -56,6 +56,13 @@
 - **Summary** :
 - Tokens are the words you fed, **Parameters** are the “brain wiring” that decides what to do with those words.
 - The more parameters, the richer the understanding of how tokens relate.
+- **Parameters are stored “memory” of how tokens typically appear together.**
+- **Process Steps**:
+    - Each token is converted to an [embedding vector](https://www.pinecone.io/learn/vector-embeddings/).
+    - The model’s parameters (weights in attention & feedforward layers) transform these embeddings.
+    - Parameters decide how the current token relates to previous tokens.
+    - During **training**, the model sees billions of tokens and adjusts its parameters to minimize prediction error (next-token prediction).
+
 
 ### GPTs Vs LLM
 - Generative Pre-Trained Transformers  are specific instance of LLMs
