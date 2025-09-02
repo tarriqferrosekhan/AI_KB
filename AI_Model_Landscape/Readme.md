@@ -1,3 +1,5 @@
+#Author : [Tarriq Ferrose Khan](www.linkedin.com/in/tarriq-ferrose-khan-ba527080) 
+
 
 # Deep Dive into Gen AI
 
@@ -62,6 +64,16 @@
     - The model’s parameters (weights in attention & feedforward layers) transform these embeddings.
     - Parameters decide how the current token relates to previous tokens.
     - During **training**, the model sees billions of tokens and adjusts its parameters to minimize prediction error (next-token prediction).
+
+### MultiModal (Image,Audio,Video) Processing by LLMs
+- **Images**
+    - As an image is not made of words, it is tokenized into small patches (e.g., 16×16 pixels) or discrete visual tokens.
+    - Once the image patches/tokens are created, they are processed by a transformer encoder (or encoder–decoder).
+    - Self-attention lets the model learn relationships between different parts of the image (e.g., “eye” ↔ “face,” “wheel” ↔ “car”).
+    - In case of  Multimodal LLMs, (like GPT-4V, LLaVA, Kosmos-1, Gemini) - The image embeddings are combined with text embeddings.
+    - [Cross-attention layers](https://arxiv.org/html/2502.02406v1) allow the model to align visual tokens with text tokens.
+    - Example: Question: “What is in the picture?” → The image tokens guide the text decoder to produce “A dog sitting on a sofa.”
+- Similarly **Audio** is transformed into Spectrograms - Convert audio into a 2D time–frequency map and **Video** into sequence of images (frames) + optional audio track
 
 
 ### GPTs Vs LLM
