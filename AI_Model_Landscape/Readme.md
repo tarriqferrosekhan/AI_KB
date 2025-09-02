@@ -3,9 +3,23 @@
 <img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/15c67450-0ed7-4deb-9375-3e7e04cb5f9b" />
 
 
-# Deep Dive into Large Language Models
+# Deep Dive into Gen AI & Large Language Models
 
 **Topics**<br>
+[Gen AI Introduction](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#gen-ai-introduction)<br>
+[Modern Algorithms](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#modern-algorithms)<br>
+[LLM Introduction](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#large-language-model-llm-introduction)<br>
+[GPTs vs LLM](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#gpts-vs-llm)<br>
+[Transformer Model Overview](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#transformer-model-overview)<br>
+[Tokens in an LLM](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#tokens-in-an-llm)<br>
+[Parameters in an LLM](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#parameters-in-an-llm)<br>
+[Types of Parameters in an LLM](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#types-of-parameters-in-an-llm)<br>
+[Tokens Vs Parameters](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#tokens-vs-parameters)<br>
+[MultiModal (Image,Audio,Video) Processing by LLMs](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#multimodal-imageaudiovideo-processing-by-llms)<br>
+[Model Capacity Vs Model Size](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#model-capacity-vs-model-size)<br>
+[Model Cards](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#model-cards)<br>
+[Responsible AI Vs Explainable AI](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#responsible-ai-vs-explainable-ai)<br>
+[LLM Classifications](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#llm-classifications)<br>
 [LLM Classification Definition](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#llm-classification-definition)<br>
 [Models Types -Use Case n Hosting](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#ai-models-types--use-case-n-hosting)<br>
 [AI Tools List By Xploria](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#ai-tools-by-xploria-httpswwwaixploriacomenultimate-list-ai)<br>
