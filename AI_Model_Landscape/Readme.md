@@ -52,6 +52,10 @@
 | **Hyperparameters** (fixed at training)             | Layers, hidden size, attention heads, context length, learning rate |
 | **Decoding Parameters** (user-defined at inference) | Temperature, Top-K, Top-P, max tokens, repetition penalty           |
 
+### Tokens Vs Parameters
+- **Summary** :
+- Tokens are the words you fed, **Parameters** are the “brain wiring” that decides what to do with those words.
+- The more parameters, the richer the understanding of how tokens relate.
 
 ### GPTs Vs LLM
 - Generative Pre-Trained Transformers  are specific instance of LLMs
