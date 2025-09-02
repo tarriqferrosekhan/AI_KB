@@ -3,7 +3,12 @@
 <img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/15c67450-0ed7-4deb-9375-3e7e04cb5f9b" />
 
 
-# Deep Dive into Gen AI and LLMs
+# Deep Dive into Large Language Models
+
+**Topics**<br>
+[LLM Classification Definition](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#llm-classification-definition)<br>
+[Models Types -Use Case n Hosting](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#ai-models-types--use-case-n-hosting)<br>
+[AI Tools List By Xploria](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Readme.md#ai-tools-by-xploria-httpswwwaixploriacomenultimate-list-ai)<br>
 
 ## Gen AI Introduction
 - AI is focused on creating systems that mimic human intelligence.
