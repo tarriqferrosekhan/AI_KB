@@ -1,7 +1,7 @@
-## AI Model Landscape Classification
+## AI Model Classification
 <img width="512" height="512" alt="ChatGPT Image Sep 2, 2025, 10_11_34 PM" src="https://github.com/user-attachments/assets/bfdeb219-8fed-400d-96f4-873668a51452" />
 
-### Definition:
+### Classification Definition:
 
 | **Category**          | **Definition**                                                                                                                                                         | **Analogy**                                                                                      |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -109,3 +109,5 @@
         <td> SentenceTransformers (Python), Hugging Face Inference, LangChain + LocalEmbeddings ,LLAMAIndex </td>
     </tr>
 </table>
+
+### Comprehensive set of AI Tools by XPloria: https://www.aixploria.com/en/ultimate-list-ai/
