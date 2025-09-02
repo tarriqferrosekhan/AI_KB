@@ -1,3 +1,18 @@
+## Gen AI Introduction
+- AI is focused on creating systems that mimic human intelligence.
+- Machine Learning (ML) is a subset of AI which learns patterns from underlying data using specific algorithms.
+- ML algorigthm can be classified majorly into:
+    -    Discriminative: Helps to Learn from Underlying data to classify or Predict.
+    -    Generative : Helps to generate/replicate basis the underlying distribution of data.
+- Generative Algorigthm can be classified into Classical & MOdern
+- Modern Algorithms:
+    - [Variational Auto Encoders](https://www.ibm.com/think/topics/variational-autoencoder)
+    - [Generative Adverserial Networks](https://aws.amazon.com/what-is/gan/)
+    - [Diffusion Models](https://www.ibm.com/think/topics/diffusion-models)
+    - [Autoregressive Models](https://aws.amazon.com/what-is/autoregressive-models/) - which generates data by predicting based on the previous elements.
+    - Most of the Gen AI models (not all) are based on AutoRegressive Algorithms
+
+
 ## AI Model Classification
 <img width="512" height="512" alt="ChatGPT Image Sep 2, 2025, 10_11_34 PM" src="https://github.com/user-attachments/assets/bfdeb219-8fed-400d-96f4-873668a51452" />
 
