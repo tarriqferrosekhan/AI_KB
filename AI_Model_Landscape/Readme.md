@@ -1,6 +1,6 @@
 #Author : [Tarriq Ferrose Khan](www.linkedin.com/in/tarriq-ferrose-khan-ba527080) 
 
-<img width="605" height="245" alt="image" src="https://github.com/user-attachments/assets/8d406072-dde0-47ef-95da-72f0579ae532" />
+<img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/15c67450-0ed7-4deb-9375-3e7e04cb5f9b" />
 
 
 # Deep Dive into Gen AI and LLMs
