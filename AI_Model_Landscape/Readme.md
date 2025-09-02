@@ -1,5 +1,7 @@
 #Author : [Tarriq Ferrose Khan](www.linkedin.com/in/tarriq-ferrose-khan-ba527080) 
 
+<img width="605" height="245" alt="image" src="https://github.com/user-attachments/assets/8d406072-dde0-47ef-95da-72f0579ae532" />
+
 
 # Deep Dive into Gen AI and LLMs
 
@@ -235,3 +237,8 @@
 </table>
 
 ### AI Tools by XPloria: https://www.aixploria.com/en/ultimate-list-ai/
+
+**To be Continued**
+
+Happy Learning 
+[Tarriq Ferrose Khan](www.linkedin.com/in/tarriq-ferrose-khan-ba527080)
