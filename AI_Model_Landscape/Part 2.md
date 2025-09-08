@@ -7,18 +7,18 @@
 
 <img width="900" height="512" alt="GenAI Part2" src="https://github.com/user-attachments/assets/3c5d2b41-6a6c-4764-9fa3-24e2328c1995" />
 
-# Foundational Concepts:
+## Foundational Concepts:
 
-## A **"Model"** in Machine Learning
+### A **"Model"** in Machine Learning
 - A mathematical representation that has learned patterns from on new or unseen data without human intervention.
 - This representation can be used to make either predictions, classifications, or decisions, based on the algorithm that was selected for the problem at hand.
 - A model can process only numbers , so all the inputs - Text, image etc are transformed into numbers before processing.
 - In case of Text , its converted into tokens using **Natural Language Processing** Algorithms
 
-## NLP Quick Introduction: 
+### NLP Quick Introduction: 
 <img width="512" height="256" alt="image" src="https://github.com/user-attachments/assets/0b3e3441-4c7a-4ed8-a68b-ea9e74fc740e" />
 
-## Tokenization Quick Introduction
+### Tokenization Quick Introduction
 - Is the process of breaking text into smaller units (tokens) that a model can understand and process.
 - Tokens can be Characters, Subwords, Words or  Special symbols like punctuation, spaces.
 - **Common Tokenization Methods**:
@@ -37,7 +37,7 @@
   - Input text → tokens → token IDs → embeddings → model.
   - Output IDs → tokens → text reconstruction.
 
-## Embedding Quick Introduction & Visualization
+### Embedding Quick Introduction & Visualization
 - Visualization of Embeddings: [https://projector.tensorflow.org/](https://projector.tensorflow.org/)
 - <img width="400" height="224" alt="image" src="https://github.com/user-attachments/assets/ce3b8bd9-6ec8-4cd1-b304-a25c2340696e" />
 - Embeddings are **dense vector representations of tokens** in a continuous, multi-dimensional space.
@@ -49,7 +49,7 @@
   - They serve as the foundation for all subsequent transformations (attention, feed-forward).
   - Output embeddings are also used before predicting the next token.
 
-## Tokenization Vs Embedding
+### Tokenization Vs Embedding
 
 <img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/2af4b17a-066c-411f-8bc7-10c47b309ac8" />
 
@@ -60,7 +60,7 @@
 | **Output**  | Tokens or IDs (discrete)                    | Dense vectors (continuous)            |
 | **Analogy** | Like chopping a sentence into puzzle pieces | Like coloring each piece with meaning |
 
-## Transformer Encoder-Decoder Architecture
+### Transformer Encoder-Decoder Architecture
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/e9be8aaa-995f-4863-af11-fa3487f79495" />
 
 - The Transformer is a **Neural Network Design** that became the backbone of modern NLP.
@@ -72,8 +72,18 @@
     - **Multi-head self-attention** which finds relationships between words.
     - **Feed-forward network** that processes info further.
     - Produces a set of context-rich vectors representing the input.
-  - Decoder → generates the output (e.g., a translation in French).
-
+  - **Decoder**, Takes the encoder’s output + previously generated words.
+    - Each decoder layer has:
+      - **Masked self-attention** which ensures it only looks at previous words (can’t peek into the future).
+      - **Encoder–decoder attention** which focuses on relevant parts of the input sentence.
+      - **Feed-forward network** - **Attention** Layer figures out “who talks to who and this layer processes what each token does with that information.
+    - Finally, a **softmax** layer predicts the next token.
+      - After the Transformer layers process everything, NEXT TOKEN needs to be decided.
+      - This layer gives probabilities for every word in the vocabulary, for Example:
+        - “mat” → 0.80
+        - “dog” → 0.15
+        - “hat” → 0.05
+        The model then samples or selects the next word.
 
 ## Lifecycle of LLM
 
