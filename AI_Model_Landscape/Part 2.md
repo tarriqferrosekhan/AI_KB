@@ -26,6 +26,8 @@ But before that we will Dive into Foundational Concepts.
 ## Overview of Lifecycle of LLM
 
 ### PRE-TRAINING PHASE
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f7352630-2345-4830-8b74-4433c29ad43f" />
+
 #### Vocabulary Creation
 **Data Sources**
 - A large corpus of text from public domain, licensed datasets (e.g., books, newswire) and synthetic data is collected.
@@ -54,6 +56,9 @@ But before that we will Dive into Foundational Concepts.
   - **Rule of thumb**: larger models → higher embedding dimensions → richer representations.
 
 ### Transformer Architecture & Training Objective
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/0360fc05-abeb-446a-969d-5c2b2f96e4ff" />
+
 
 **Input Embeddings → Transformer Stack**
 - Each token embedding (From Embedding Matrix) enters the Transformer encoder-decoder architecture (for LLMs like GPT, usually decoder-only).
