@@ -7,13 +7,13 @@
 
 <img width="900" height="512" alt="GenAI Part2" src="https://github.com/user-attachments/assets/3c5d2b41-6a6c-4764-9fa3-24e2328c1995" />
 
-But before that we will Dive into Foundational Concepts.
+# Foundational Concepts:
 
-## A **"Model** in Machine Learning
+## A **"Model"** in Machine Learning
 - A mathematical representation that has learned patterns from on new or unseen data without human intervention.
 - This representation can be used to make either predictions, classifications, or decisions, based on the algorithm that was selected for the problem at hand.
 - A model can process only numbers , so all the inputs - Text, image etc are transformed into numbers before processing.
-- In case of Text , its converted into tokens using Natural Language Processing Algorithms
+- In case of Text , its converted into tokens using **Natural Language Processing** Algorithms
 
 ## NLP Quick Introduction: 
 <img width="512" height="256" alt="image" src="https://github.com/user-attachments/assets/0b3e3441-4c7a-4ed8-a68b-ea9e74fc740e" />
@@ -25,9 +25,9 @@ But before that we will Dive into Foundational Concepts.
   - Whitespace / Word-based → split on spaces. Simple but fails with new/rare words.
   - Character-based → every character is a token. Very flexible but sequences get long.
   - Subword-based (most common today):
-    - BPE (Byte Pair Encoding) → merges frequent character pairs.
-    - WordPiece (used in BERT).
-    - SentencePiece (used in GPT, T5, etc.).
+    - **BPE** (Byte Pair Encoding) → merges frequent character pairs.
+    - **WordPiece** (used in BERT).
+    - **SentencePiece** (used in GPT, T5, etc.).
 - **Example: Sentence:"Unhappiness"**
   - Word-based → "Unhappiness" (one token, if in vocab).
   - Character-based → "U" "n" "h" "a" ... "s".
@@ -59,6 +59,20 @@ But before that we will Dive into Foundational Concepts.
 | **Purpose** | Break text into tokens/IDs                  | Map tokens to meaningful vectors      |
 | **Output**  | Tokens or IDs (discrete)                    | Dense vectors (continuous)            |
 | **Analogy** | Like chopping a sentence into puzzle pieces | Like coloring each piece with meaning |
+
+## Transformer Encoder-Decoder Architecture
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/e9be8aaa-995f-4863-af11-fa3487f79495" />
+
+- The Transformer is a **Neural Network Design** that became the backbone of modern NLP.
+- This was introduced in “[Attention is All You Need](https://arxiv.org/abs/1706.03762)”, 2017.
+- It has two main parts:
+  - **Encoder** → builds a representation that captures meaning + word relationships.
+    - Input sentence is first **tokenized to embeddings + positional encoding**.
+    - Each encoder layer has:
+    - **Multi-head self-attention** which finds relationships between words.
+    - **Feed-forward network** that processes info further.
+    - Produces a set of context-rich vectors representing the input.
+  - Decoder → generates the output (e.g., a translation in French).
 
 
 ## Lifecycle of LLM
