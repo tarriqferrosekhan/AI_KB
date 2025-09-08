@@ -1,6 +1,6 @@
 #Author : [Tarriq Ferrose Khan](www.linkedin.com/in/tarriq-ferrose-khan-ba527080) 
 
-<!--img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/15c67450-0ed7-4deb-9375-3e7e04cb5f9b"-->
+<img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/15c67450-0ed7-4deb-9375-3e7e04cb5f9b">
 # Deep Dive into Gen AI & Large Language Models (Part 2)
 
 **Lifecycle of LLM** <br>
@@ -161,3 +161,70 @@
 - Backpropagation adjusts weights (embeddings + attention + feed-forward layers) to reduce prediction error.
 - Training is distributed across thousands of GPUs/TPUs with parallelization techniques.
 
+### Fine-Tuning & Alignment
+
+-  **Supervised Fine-Tuning (SFT)**
+  -  Start with the pre-trained model.
+  - Collect a curated dataset of instruction–response pairs (e.g., human-written Q&A, dialogues, reasoning tasks).
+  - Train the model further to follow instructions better.
+  - This makes the model more helpful and task-oriented (instead of just predicting raw next tokens).
+
+- **Reinforcement Learning from Human Feedback (RLHF)**
+  - Step 1: Humans rank multiple model outputs (for the same prompt).
+  - Step 2: Train a reward model to predict these rankings.
+  - Step 3: Use reinforcement learning (PPO, Proximal Policy Optimization) to optimize the LLM so that it produces outputs closer to human preference.
+  - **Purpose**: reduce harmful, irrelevant, or nonsensical answers.
+
+- **Guardrails & Safety Layers**:
+  - Add filters, policies, and moderation layers outside the model.
+  - Examples:
+    - Refuse unsafe instructions (e.g., violence, self-harm).
+    - Mask sensitive PII (personal info).
+    - Ensure factual grounding (RAG, citations).
+    - These aren’t part of the model weights, but system-level enforcement.
+
+- **Other Adaptation Techniques**
+- Instruction tuning → train on datasets with explicit instructions.
+- Domain-specific fine-tuning → adapt the model for medicine, law, finance, etc.
+- Parameter-efficient fine-tuning (PEFT) → methods like LoRA, adapters, prefix-tuning so fine-tuning can be done cheaply without retraining billions of parameters.
+
+ **After this stage, the model becomes not just a language predictor, but a helpful AI assistant that follows human values, instructions, and safety norms.**
+
+
+### Deployment & Inference
+
+- **Model Serving**:
+  - The trained model weights (often hundreds of GBs) are deployed on specialized hardware (GPUs, TPUs, or custom AI accelerators).
+  - Techniques used:
+    - Model parallelism which splits model layers across multiple GPUs.
+    - Tensor parallelism which split tensor computations across GPUs.
+    - Quantization (e.g., FP32 → INT8/INT4) to reduce memory + speed up inference.
+    - Sharding + caching for distributed inference.
+- **Input Processing (Tokenization)**
+  - User input are tokenized using the same tokenizer from Pre-training (BPE, SentencePiece, etc.).
+  - Each token ID is mapped to its embedding vector from the learned embedding matrix.
+- **Autoregressive Generation**:
+  - The input embeddings go through the Transformer layers.
+  - The model outputs a probability distribution over the vocabulary for the next token.
+- **Sampling strategies**:
+  - Greedy decoding → pick top-1 token each step (deterministic, but boring).
+  - Beam search → explores multiple likely continuations.
+  - Top-k / Top-p (nucleus) sampling → adds randomness for creativity.
+  - This repeats token by token until end-of-sequence or user stop.
+- **Post-Processing**:
+  - Token IDs → converted back to text.
+  - Extra layers (outside the model) may:
+    - Filter unsafe outputs (guardrails).
+    - Add citations (RAG systems).
+    - Integrate with external tools/APIs
+
+- **Integration into Applications**:
+- LLMs can be used directly (ChatGPT-style assistants) or as building blocks inside bigger systems:Chatbots / Agents (customer support, productivity).
+- RAG (Retrieval-Augmented Generation) → grounding answers in external databases.
+- Coding Assistants → Copilot, code completion.
+- Enterprise Applications → summarization, search, automation.
+ 
+(To be Continued)
+
+Happy Learning
+Tarriq
