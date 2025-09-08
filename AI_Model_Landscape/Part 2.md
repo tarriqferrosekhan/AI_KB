@@ -61,6 +61,13 @@
 | **Analogy** | Like chopping a sentence into puzzle pieces | Like coloring each piece with meaning |
 
 ### Neural Networks 
+- A neural network is a computer system that can learn complex patterns , inspired by how the human brain works.
+- It learns patterns from data by passing information through layers of neurons (nodes).
+- It has Layers of neurons (mathematical functions), Connected by weights (parameters) and Trained using backpropagation to minimize a **loss function**.
+- Example:
+  - **Input**: picture of a handwritten “5” -> **Hidden layers**: detect strokes, curves, shapes -> **Output**: predicts it’s the number “5”.
+- **In LLMS**
+  -LLMs use a type Neural Network called **Transformer Encoder-Decoder Architecture**
 
 ### Transformer Encoder-Decoder Architecture
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/e9be8aaa-995f-4863-af11-fa3487f79495" />
@@ -81,11 +88,11 @@
       - **Feed-forward network** - **Attention** Layer figures out “who talks to who and this layer processes what each token does with that information.
     - Finally, a **softmax** layer predicts the next token.
       - After the Transformer layers process everything, NEXT TOKEN needs to be decided.
+      - This Layer is what makes the model’s predictions interpretable—as probabilities—so we can pick the next token in text generation.
       - This layer gives probabilities for every word in the vocabulary, for Example:
         - “mat” → 0.80
         - “dog” → 0.15
-        - “hat” → 0.05
-        The model then samples or selects the next word.
+        - “hat” → 0.05 , The model then samples or selects the next word.
 
 ## Lifecycle of LLM
 
