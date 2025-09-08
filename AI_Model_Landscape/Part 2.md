@@ -84,6 +84,8 @@ But before that we will Dive into Foundational Concepts.
 - Example: "cat" → ID 5021 , "##ting" → ID 7842 (continuation of a word), " " (space) → ID 320
 
 ### Embedding Matrix
+<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/6c0e2084-5514-46fc-bc90-8b091fd51681" />
+
 - Now using the tokens from the Vocabulary an Embedding Matrix is created
   - Each token ID (integer) is mapped to a dense vector (embedding).
   - Initially these vectors are randomly initialized, not meaningful yet.
