@@ -1,14 +1,13 @@
-#Author : [Tarriq Ferrose Khan](www.linkedin.com/in/tarriq-ferrose-khan-ba527080) 
+<a href="www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank"><img width="406" height="226" alt="image" src="https://github.com/user-attachments/assets/15c67450-0ed7-4deb-9375-3e7e04cb5f9b"></a>
 
-<img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/15c67450-0ed7-4deb-9375-3e7e04cb5f9b">
 # Deep Dive into Gen AI & Large Language Models (Part 2)
-
-**Lifecycle of LLM** <br>
-
 <img width="900" height="512" alt="GenAI Part2" src="https://github.com/user-attachments/assets/3c5d2b41-6a6c-4764-9fa3-24e2328c1995" />
 
-## Quick Introduction of Foundational Concepts:
+## Table Of Contents
+[Quick Introduction of Foundational Concepts](https://github.com/tarriqferrosekhan/AI_KB/edit/main/AI_Model_Landscape/Part%202.md#quick-introduction-of-foundational-concepts)
 
+
+## Quick Introduction of Foundational Concepts:
 ### A **"Model"** in Machine Learning
 - A mathematical representation that has learned patterns from on new or unseen data without human intervention.
 - This representation can be used to make either predictions, classifications, or decisions, based on the algorithm that was selected for the problem at hand.
@@ -192,6 +191,7 @@
 
 
 ### Deployment & Inference
+<img width="521" height="363" alt="image" src="https://github.com/user-attachments/assets/e51def9e-f115-4b5f-bc21-a83aaac50194" />
 
 - **Model Serving**:
   - The trained model weights (often hundreds of GBs) are deployed on specialized hardware (GPUs, TPUs, or custom AI accelerators).
@@ -227,4 +227,5 @@
 (To be Continued)
 
 Happy Learning
-Tarriq
+Author : [Tarriq Ferrose Khan](www.linkedin.com/in/tarriq-ferrose-khan-ba527080) 
+
