@@ -5,6 +5,20 @@
 
 ## Table Of Contents
 [Quick Introduction of Foundational Concepts](https://github.com/tarriqferrosekhan/AI_KB/edit/main/AI_Model_Landscape/Part%202.md#quick-introduction-of-foundational-concepts)
+- [A "Model" in Machine Learning](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#a-model-in-machine-learning)
+- [NLP](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#nlp)
+- [Tokenization](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#tokenization)
+- [Embedding](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#embedding-with-visualization)
+- [Tokenization Vs Embedding](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#tokenization-vs-embedding)
+- [Neural Networks](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#neural-networks)
+- [Transformer Encoder-Decoder Architecture](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#transformer-encoder-decoder-architecture)
+  
+[Life Cycle of LLM](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#lifecycle-of-llm)
+- [PRE-TRAINING PHASE](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#pre-training-phase)
+- [Embedding Matrix](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#embedding-matrix)
+- [Transformer Architecture & Training Objective](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#transformer-architecture--training-objective)
+- [Fine-Tuning & Alignment](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#fine-tuning--alignment)
+- [Deployment & Inference](https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md#deployment--inference)
 
 
 ## Quick Introduction of Foundational Concepts:
@@ -161,6 +175,7 @@
 - Training is distributed across thousands of GPUs/TPUs with parallelization techniques.
 
 ### Fine-Tuning & Alignment
+<img width="363" height="521" alt="image" src="https://github.com/user-attachments/assets/cfd58748-59e6-4dfa-bfba-fa1551009aaf" />
 
 -  **Supervised Fine-Tuning (SFT)**
   -  Start with the pre-trained model.
