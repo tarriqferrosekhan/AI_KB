@@ -38,17 +38,27 @@ But before that we will Dive into Foundational Concepts.
   - Output IDs → tokens → text reconstruction.
 
 ## Embedding Quick Introduction & Visualization
-- Visualization : [https://projector.tensorflow.org/](https://projector.tensorflow.org/)
+- Visualization of Embeddings: [https://projector.tensorflow.org/](https://projector.tensorflow.org/)
 - <img width="400" height="224" alt="image" src="https://github.com/user-attachments/assets/ce3b8bd9-6ec8-4cd1-b304-a25c2340696e" />
-
 - Embeddings are **dense vector representations of tokens** in a continuous, multi-dimensional space.
 - Each token (from the vocabulary) is mapped to a unique vector of numbers.
-- please check the url 
+- **Embeddings capture semantic and syntactic relationships:"king" – "man" + "woman" ≈ "queen"**
+- **Embedding Matrix** Size = Vocabulary size × Embedding dimension
+- **In LLMs**:
+  - Embeddings are the input layer: token IDs pointing to embedding vectors.
+  - They serve as the foundation for all subsequent transformations (attention, feed-forward).
+  - Output embeddings are also used before predicting the next token.
 
-Similar tokens have vectors that are closer together in this space.
 ## Tokenization Vs Embedding
 
 <img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/2af4b17a-066c-411f-8bc7-10c47b309ac8" />
+
+| Aspect      | Tokenization                                | Embedding                             |
+| ----------- | ------------------------------------------- | ------------------------------------- |
+| **Stage**   | First step (preprocessing)                  | After tokenization (representation)   |
+| **Purpose** | Break text into tokens/IDs                  | Map tokens to meaningful vectors      |
+| **Output**  | Tokens or IDs (discrete)                    | Dense vectors (continuous)            |
+| **Analogy** | Like chopping a sentence into puzzle pieces | Like coloring each piece with meaning |
 
 
 ## Overview of Lifecycle of LLM
@@ -82,6 +92,7 @@ Similar tokens have vectors that are closer together in this space.
   - Example: If vocab size = 50,000 and embedding_dim = 768 → matrix shape = (50,000 × 768),Each row corresponds to a token ID’s vector representation.
   - Embedding dimension depends on model size (and hardware): **GPT-2 small → 768, GPT-2 medium → 1024, GPT-3 → 12288**.
   - **Rule of thumb**: larger models → higher embedding dimensions → richer representations.
+
 
 ### Transformer Architecture & Training Objective
 
