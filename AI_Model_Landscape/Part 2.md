@@ -61,7 +61,7 @@ But before that we will Dive into Foundational Concepts.
 | **Analogy** | Like chopping a sentence into puzzle pieces | Like coloring each piece with meaning |
 
 
-## Overview of Lifecycle of LLM
+## Lifecycle of LLM
 
 ### PRE-TRAINING PHASE
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f7352630-2345-4830-8b74-4433c29ad43f" />
