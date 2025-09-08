@@ -1,16 +1,11 @@
 #Author : [Tarriq Ferrose Khan](www.linkedin.com/in/tarriq-ferrose-khan-ba527080) 
 
-<img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/15c67450-0ed7-4deb-9375-3e7e04cb5f9b">
-
-<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/edb8a6e8-d2e5-41fe-b04e-482de2992d50" />
-
-
-
+<!--img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/15c67450-0ed7-4deb-9375-3e7e04cb5f9b"-->
 # Deep Dive into Gen AI & Large Language Models (Part 2)
 
 **Lifecycle of LLM** <br>
 
-<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/bec4f5d3-e9bd-421f-a8f8-4d57f4c46aee" />
+<img width="900" height="512" alt="GenAI Part2" src="https://github.com/user-attachments/assets/3c5d2b41-6a6c-4764-9fa3-24e2328c1995" />
 
 But before that we will Dive into Foundational Concepts.
 
