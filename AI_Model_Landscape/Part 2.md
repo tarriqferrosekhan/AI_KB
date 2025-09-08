@@ -21,9 +21,6 @@ But before that we will Dive into Foundational Concepts.
 ## Tokenization Quick Introduction
 - Is the process of breaking text into smaller units (tokens) that a model can understand and process.
 - Tokens can be Characters, Subwords, Words or  Special symbols like punctuation, spaces.
-- **In LLMs** Tokenization is done before input and after output like:
-  - Input text → tokens → token IDs → embeddings → model.
-  - Output IDs → tokens → text reconstruction.
 - **Common Tokenization Methods**:
   - Whitespace / Word-based → split on spaces. Simple but fails with new/rare words.
   - Character-based → every character is a token. Very flexible but sequences get long.
@@ -36,6 +33,9 @@ But before that we will Dive into Foundational Concepts.
   - Character-based → "U" "n" "h" "a" ... "s".
   - Subword (BPE) → "Un" "happiness".
   - Subword (WordPiece) → "Un" "##happiness".
+- **In LLMs** Tokenization is done before input and after output like:
+  - Input text → tokens → token IDs → embeddings → model.
+  - Output IDs → tokens → text reconstruction.
 
 ## Tokenization Vs Embedding
 
