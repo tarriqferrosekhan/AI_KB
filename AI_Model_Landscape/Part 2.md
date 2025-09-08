@@ -37,6 +37,15 @@ But before that we will Dive into Foundational Concepts.
   - Input text → tokens → token IDs → embeddings → model.
   - Output IDs → tokens → text reconstruction.
 
+## Embedding Quick Introduction & Visualization
+- Visualization : [https://projector.tensorflow.org/](https://projector.tensorflow.org/)
+- <img width="400" height="224" alt="image" src="https://github.com/user-attachments/assets/ce3b8bd9-6ec8-4cd1-b304-a25c2340696e" />
+
+- Embeddings are **dense vector representations of tokens** in a continuous, multi-dimensional space.
+- Each token (from the vocabulary) is mapped to a unique vector of numbers.
+- please check the url 
+
+Similar tokens have vectors that are closer together in this space.
 ## Tokenization Vs Embedding
 
 <img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/2af4b17a-066c-411f-8bc7-10c47b309ac8" />
