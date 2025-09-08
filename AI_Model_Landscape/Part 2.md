@@ -12,12 +12,18 @@ But before that we will Dive into Foundational Concepts.
 ## A **"Model** in Machine Learning
 - A mathematical representation that has learned patterns from on new or unseen data without human intervention.
 - This representation can be used to make either predictions, classifications, or decisions, based on the algorithm that was selected for the problem at hand.
+- A model can process only numbers , so all the inputs - Text, image etc are transformed into numbers before processing.
+- In case of Text , its converted into tokens using Natural Language Processing Algorithms
 
-## NLP Basics: 
-### Lexical
-### Syntacital
-### Semantical 
-### Pragmatic
+## NLP Quick Introduction: 
+<img width="512" height="256" alt="image" src="https://github.com/user-attachments/assets/0b3e3441-4c7a-4ed8-a68b-ea9e74fc740e" />
+
+## Tokenization Quick Introduction
+- Is the process of breaking text into smaller units (tokens) that a model can understand and process.
+- Tokens can be Characters, Subwords, Words or  Special symbols like punctuation, spaces.
+- **In LLMs** Tokenization is done before input and after output like:
+  - Input text → tokens → token IDs → embeddings → model.
+  - Output IDs → tokens → text reconstruction.
 
 ## Tokenization Vs Embedding
 
