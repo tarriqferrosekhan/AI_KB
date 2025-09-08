@@ -24,6 +24,18 @@ But before that we will Dive into Foundational Concepts.
 - **In LLMs** Tokenization is done before input and after output like:
   - Input text → tokens → token IDs → embeddings → model.
   - Output IDs → tokens → text reconstruction.
+- **Common Tokenization Methods**:
+  - Whitespace / Word-based → split on spaces. Simple but fails with new/rare words.
+  - Character-based → every character is a token. Very flexible but sequences get long.
+  - Subword-based (most common today):
+    - BPE (Byte Pair Encoding) → merges frequent character pairs.
+    - WordPiece (used in BERT).
+    - SentencePiece (used in GPT, T5, etc.).
+- **Example: Sentence:"Unhappiness"**
+  - Word-based → "Unhappiness" (one token, if in vocab).
+  - Character-based → "U" "n" "h" "a" ... "s".
+  - Subword (BPE) → "Un" "happiness".
+  - Subword (WordPiece) → "Un" "##happiness".
 
 ## Tokenization Vs Embedding
 
