@@ -128,7 +128,6 @@
   - Embedding dimension depends on model size (and hardware): **GPT-2 small → 768, GPT-2 medium → 1024, GPT-3 → 12288**.
   - **Rule of thumb**: larger models → higher embedding dimensions → richer representations.
 
-
 ### Transformer Architecture & Training Objective
 
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/0360fc05-abeb-446a-969d-5c2b2f96e4ff" />
@@ -158,41 +157,7 @@
 - Loss function = cross-entropy loss between predicted distribution and true next token.
 
 **Optimization** 
-
-Optimizer: usually AdamW with learning rate warmup + cosine decay.
-
-Backpropagation adjusts weights (embeddings + attention + feed-forward layers) to reduce prediction error.
-
-Training is distributed across thousands of GPUs/TPUs with parallelization techniques.
-
-👉 So, Part 3 (Transformer + Training Objective) in short:
-
-Token embeddings + positional encodings enter Transformer layers.
-
-Multi-head self-attention learns token dependencies.
-
-Feed-forward layers + normalization refine representations.
-
-Output layer predicts next token probabilities.
-
-Cross-entropy loss trains the model via backpropagation.
-
-
-
-#### Vocabulary Creation 
-#### Embedding Vector creation
-### Training
-### Fine-Tuning
-### Deployment
-
-
-
-
-## Natural Language Processing
-## Embedding Process
-
-## Embedding Algorithm
-
-
-
+- Optimizer: usually AdamW with learning rate warmup + cosine decay.
+- Backpropagation adjusts weights (embeddings + attention + feed-forward layers) to reduce prediction error.
+- Training is distributed across thousands of GPUs/TPUs with parallelization techniques.
 
