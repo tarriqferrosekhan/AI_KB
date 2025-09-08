@@ -7,7 +7,7 @@
 
 <img width="900" height="512" alt="GenAI Part2" src="https://github.com/user-attachments/assets/3c5d2b41-6a6c-4764-9fa3-24e2328c1995" />
 
-## Foundational Concepts:
+## Quick Introduction of Foundational Concepts:
 
 ### A **"Model"** in Machine Learning
 - A mathematical representation that has learned patterns from on new or unseen data without human intervention.
@@ -15,10 +15,10 @@
 - A model can process only numbers , so all the inputs - Text, image etc are transformed into numbers before processing.
 - In case of Text , its converted into tokens using **Natural Language Processing** Algorithms
 
-### NLP Quick Introduction: 
+### NLP: 
 <img width="512" height="256" alt="image" src="https://github.com/user-attachments/assets/0b3e3441-4c7a-4ed8-a68b-ea9e74fc740e" />
 
-### Tokenization Quick Introduction
+### Tokenization
 - Is the process of breaking text into smaller units (tokens) that a model can understand and process.
 - Tokens can be Characters, Subwords, Words or  Special symbols like punctuation, spaces.
 - **Common Tokenization Methods**:
@@ -37,7 +37,7 @@
   - Input text → tokens → token IDs → embeddings → model.
   - Output IDs → tokens → text reconstruction.
 
-### Embedding Quick Introduction & Visualization
+### Embedding (with Visualization)
 - Visualization of Embeddings: [https://projector.tensorflow.org/](https://projector.tensorflow.org/)
 - <img width="400" height="224" alt="image" src="https://github.com/user-attachments/assets/ce3b8bd9-6ec8-4cd1-b304-a25c2340696e" />
 - Embeddings are **dense vector representations of tokens** in a continuous, multi-dimensional space.
@@ -59,6 +59,8 @@
 | **Purpose** | Break text into tokens/IDs                  | Map tokens to meaningful vectors      |
 | **Output**  | Tokens or IDs (discrete)                    | Dense vectors (continuous)            |
 | **Analogy** | Like chopping a sentence into puzzle pieces | Like coloring each piece with meaning |
+
+### Neural Networks 
 
 ### Transformer Encoder-Decoder Architecture
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/e9be8aaa-995f-4863-af11-fa3487f79495" />
