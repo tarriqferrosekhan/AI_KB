@@ -14,7 +14,10 @@
     <tbody>
       <tr>
         <td>Weather Fore cast + Alert Example</td>
-        <td><img width="300" height="350" alt="image" src="https://github.com/user-attachments/assets/02fd486d-b5d1-42c0-aaf6-5d805b4b84c5" /></td>
+        <td>
+          <!--img width="300" height="350" alt="image" src="https://github.com/user-attachments/assets/02fd486d-b5d1-42c0-aaf6-5d805b4b84c5" /-->
+          <img width="300" height="350" alt="image" src="https://github.com/user-attachments/assets/a26f4a17-4bc7-4c87-8bb1-f495b33a41b2" />
+        </td>
         <td><img width="300" height="350" alt="image" src="https://github.com/user-attachments/assets/352a0e1f-2ce7-4264-ab4e-bd133dfe3e44" />
 </td>
         <td><img width="300" height="350" alt="image" src="https://github.com/user-attachments/assets/c34f56ce-1d42-43a8-91b2-d894e996125d"/></td>
