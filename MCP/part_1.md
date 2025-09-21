@@ -1,7 +1,19 @@
 
 <img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/bc2bb7dc-6855-4222-b866-a80524c31089" />
 
-<h2>Comprehensive comparitive study of (LLM+MCP+REST API) Vs (LLM+REST API) Vs (REST API)</h2>
+<h2>References:</h2> 
+<ul>
+<li><a href="https://modelcontextprotocol.io/docs/getting-started/intro" target="_blank">MCP Introduction</a></li>
+<li><a href="https://modelcontextprotocol.io/docs/learn/architecture" target="_blank">MCP Architecture</a></li>
+<li><a href="https://modelcontextprotocol.io/docs/develop/build-server" target="_blank">Build a MCP Server</a></li>
+<li><a href="https://modelcontextprotocol.io/docs/develop/build-client" target="_blank">Build a MCP Client</a></li>
+</ul>
+
+<h2>Where Exactly MCP is adding Value? - A Comprehensive comparitive study</h2>
+<ul>
+  <li>Wrote an MCP Server and Client for Weather API example from modelcontextprotocol.io <b>but using OPEN AI </b>, instead of <b>Claude Desktop</b></li>
+  <li>Compared the MCP design and implementation with other methods - LLM+NO MCP and classical REST API <b>to enlighten where Exactly MCP is adding Value</b></li>
+</ul>
   <table>
     <thead>
       <tr>
