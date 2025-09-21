@@ -1,7 +1,7 @@
-#MCP Deep Dive - Part 1
 
+<img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/bc2bb7dc-6855-4222-b866-a80524c31089" />
 
-<h2>Classical REST API vs LLM Wrapper vs MCP</h2>
+<h2>Comprehensive comparitive study of (LLM+MCP+REST API) Vs (LLM+REST API) Vs (REST API)</h2>
   <table>
     <thead>
       <tr>
@@ -13,7 +13,13 @@
     </thead>
     <tbody>
       <tr>
-        <td>Weather Fore cast + Alert Example</td>
+        <td>Weather Fore cast + Alert Example <b>CODE</b></td>
+        <td><a href="https://github.com/tarriqferrosekhan/AI_DEV/tree/main/03_mcp/Weather.RESTAPI">Weather.RESTAPI</a></td>
+        <td><a href="https://github.com/tarriqferrosekhan/AI_DEV/tree/main/03_mcp/Weather.OpenAI.NOMCP">Weather.OpenAI.NOMCP</a></td>
+        <td><a href="https://github.com/tarriqferrosekhan/AI_DEV/tree/main/03_mcp/Weather.OpenAI.MCP">Weather.OpenAI.MCP</a></td>
+      </tr>
+      <tr>
+        <td>Process Flow Comparison</td>
         <td>
           <!--img width="300" height="350" alt="image" src="https://github.com/user-attachments/assets/02fd486d-b5d1-42c0-aaf6-5d805b4b84c5" /-->
           <img width="300" height="350" alt="image" src="https://github.com/user-attachments/assets/a26f4a17-4bc7-4c87-8bb1-f495b33a41b2" />
@@ -66,5 +72,9 @@
       </tr>
     </tbody>
   </table>
+
+  More to come on MCP
+  Happy Learning
+  Author - <a href="www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank">Tarriq Ferrose Khan</a>
 
 
