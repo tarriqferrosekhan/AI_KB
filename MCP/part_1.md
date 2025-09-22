@@ -85,8 +85,8 @@ Author - <a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" targ
     </tbody>
   </table>
 
-  More to come on MCP
-  Happy Learning
-  - <a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank">Tarriq Ferrose Khan</a>
+  <b>More to come on MCP!<b><br>.
+  <b>Happy Learning!</b><br>
+  -<a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank">Tarriq Ferrose Khan</a>
 
 
