@@ -8,8 +8,8 @@ Author - <a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" targ
 
 <h2>Comparitive Study with Code Examples</h2>
 <ul>
-  <li>Wrote an MCP Server and Client for Weather API example from modelcontextprotocol.io <b>but using OPEN AI </b>, instead of <b>Claude Desktop</b></li>
-  <li>Compared the MCP design and implementation with other methods - LLM+NO MCP and classical REST API <b>to enlighten where Exactly MCP is adding Value</b></li>
+  <li>Wrote an MCP Server and Client for Weather API example from <a href="https://modelcontextprotocol.io/docs/getting-started/intro">modelcontextprotocol.io</a> but using LLM from <b>OPEN AI </b>, instead of <b>Claude Desktop.</b></li>
+  <li>Compared the MCP design and implementation with other methods - LLM+NO MCP and classical REST API <b>to enlighten where Exactly MCP is adding Value.</b></li>
 </ul>
   <table>
     <thead>
