@@ -1,6 +1,6 @@
 <h2>Where Exactly MCP is adding Value? - A Comprehensive comparitive study</h2>
 Author - <a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank">Tarriq Ferrose Khan</a><br>
-<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/bc2bb7dc-6855-4222-b866-a80524c31089" />
+<a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank"><img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/bc2bb7dc-6855-4222-b866-a80524c31089" /></a>
 
 <h2>References:</h2>
 <a href="https://modelcontextprotocol.io/docs/getting-started/intro" target="_blank">MCP Introduction</a> | <a href="https://modelcontextprotocol.io/docs/learn/architecture" target="_blank">MCP Architecture</a> | 
