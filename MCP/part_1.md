@@ -1,5 +1,5 @@
 <h2>Where Exactly MCP is adding Value? - A Comprehensive comparitive study</h2>
-Author - <a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank">Tarriq Ferrose Khan</a><br>
+<b>Author:</b> <br>
 <a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank"><img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/bc2bb7dc-6855-4222-b866-a80524c31089" /></a>
 
 <h2>References:</h2>
