@@ -23,9 +23,9 @@ Author - <a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" targ
     <tbody>
       <tr>
         <td><b>Example CODE</b></td>
-        <td><a href="https://github.com/tarriqferrosekhan/AI_DEV/tree/main/03_mcp/Weather.RESTAPI">Weather.RESTAPI</a></td>
-        <td><a href="https://github.com/tarriqferrosekhan/AI_DEV/tree/main/03_mcp/Weather.OpenAI.NOMCP">Weather.OpenAI.NOMCP</a></td>
-        <td><a href="https://github.com/tarriqferrosekhan/AI_DEV/tree/main/03_mcp/Weather.OpenAI.MCP">Weather.OpenAI.MCP</a></td>
+        <td><a href="https://github.com/tarriqferrosekhan/AI_DEV/tree/main/03_mcp/Weather.RESTAPI" target="_blank">Weather.RESTAPI</a></td>
+        <td><a href="https://github.com/tarriqferrosekhan/AI_DEV/tree/main/03_mcp/Weather.OpenAI.NOMCP" target="_blank">Weather.OpenAI.NOMCP</a></td>
+        <td><a href="https://github.com/tarriqferrosekhan/AI_DEV/tree/main/03_mcp/Weather.OpenAI.MCP" target="_blank">Weather.OpenAI.MCP</a></td>
       </tr>
         <tr>
         <td>Process Flow Comparison</td>
