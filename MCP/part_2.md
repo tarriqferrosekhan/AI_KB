@@ -1,5 +1,20 @@
 
 
+# UI Demo
+
+<table>
+  <tr>
+    <td>
+      Launch UI and Initial Screen
+    </td>
+    <td>
+<img width="500" height="406" alt="image" src="https://github.com/user-attachments/assets/30c21be0-dc4a-4e80-8b36-b7bf11eebee8" />
+    </td>
+  </tr>
+    
+</table>
+
+
 
 <table>
   <tr>
@@ -39,3 +54,5 @@
     </td>
    </tr>
 </table>
+
+
