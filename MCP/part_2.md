@@ -62,7 +62,9 @@
     </td>
   </tr>
   <tr>
-    <td> Check Weather </td>
+    <td> <b>Get Weather Forecast</b> </td>
+    <td><img width="1252" height="382" alt="image" src="https://github.com/user-attachments/assets/44fba0d3-cfd1-46ff-b397-0451be5776e3" />
+ </td>
   </tr>
   <tr>
     <td style="vertical-align:top">
