@@ -1,5 +1,14 @@
+<h2>MCP Agents Demo</h2>
+<b>Author:</b> <br>
+<a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank"><img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/bc2bb7dc-6855-4222-b866-a80524c31089" /></a>
+<br>
 
-# Launch MCP Servers and MCP Host via UI.py
+# Architecture
+
+<img width="1273" height="542" alt="image" src="https://github.com/user-attachments/assets/3efe4e1e-2441-4a87-8185-6b5ade7ed5f8" />
+
+
+# How to Launch
 <table>
   <tr>
     <td>
