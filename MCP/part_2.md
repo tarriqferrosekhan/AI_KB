@@ -67,6 +67,11 @@
  </td>
   </tr>
   <tr>
+    <td><b>Get (Electronic) Products</b> </td>
+    <td><img width="667" height="561" alt="image" src="https://github.com/user-attachments/assets/0ce6085d-7e93-41ab-bfe1-77fea4199d57" />
+ </td>
+  </tr>
+  <tr>
     <td style="vertical-align:top">
       Fecthing Products From Fakestore API based on Season
       via Product MCP Server
