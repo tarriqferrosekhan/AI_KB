@@ -201,6 +201,9 @@ In this Part, we will see: <br>
     </td>
   </tr>
 </table>
+<br>
+
+<b>Upcoming: Agent Workflow using Langchain + LangGraph.</b>
 
  <b>More to come on MCP!<b><br>.
   <b>Happy Learning!</b><br>
