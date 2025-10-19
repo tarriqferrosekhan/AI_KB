@@ -3,6 +3,17 @@
 <a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank"><img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/bc2bb7dc-6855-4222-b866-a80524c31089" /></a>
 <br>
 
+# Pre-Read
+[Part-1](https://github.com/tarriqferrosekhan/AI_KB/blob/main/MCP/part_1.md): <b>Where Exactly MCP is adding Value? - A Comprehensive comparitive study</b>
+
+# Overview
+In this Part, we will see: <br>
+<ul>
+<li><b>3 MCP servers are implemented, exposing the capabilities as MCP Tools </b></li>
+<li><b>An MCP Host is implemented which connects to all the servers and exposes the Tools of all MCP servers</b></li>
+<li><b>An UI is implemented which launches the MCP Host and interacts with respective tools of respective MCP servers via the Agents</b></li>
+</ul>
+
 # Architecture
 
 <img width="1273" height="542" alt="image" src="https://github.com/user-attachments/assets/3efe4e1e-2441-4a87-8185-6b5ade7ed5f8" />
