@@ -41,6 +41,13 @@
 
 # UI Demo
 
+<ol>
+  <li>Initialise UI</li>
+  <li>Get Weather Data</li>
+  <li>Get Products Data</li>
+  <li>Get Products Based on Season</li>
+</ol>
+
 <table>
   <tr>
     <td>UI Action</td>
@@ -55,6 +62,9 @@
     </td>
   </tr>
   <tr>
+    <td> Check Weather </td>
+  </tr>
+  <tr>
     <td style="vertical-align:top">
       Fecthing Products From Fakestore API based on Season
       via Product MCP Server
@@ -62,6 +72,14 @@
     <td>
 <img width="700" height="1030" alt="image" src="https://github.com/user-attachments/assets/d5806d37-bb3e-42ee-93f9-23317eadadc0" />
     </td>
+  </tr>
+  <tr>
+    <td>
+      
+    </td>
+    <td>
+    </td>
+    
   </tr>
 </table>
 
