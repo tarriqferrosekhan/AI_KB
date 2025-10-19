@@ -5,11 +5,15 @@
 <table>
   <tr>
     <td>
-      Launch UI and Initial Screen
-    </td>
-    <td>
+    Launch UI and Initial Screen<br>
 <img width="500" height="406" alt="image" src="https://github.com/user-attachments/assets/30c21be0-dc4a-4e80-8b36-b7bf11eebee8" />
     </td>
+    <td>
+      MCP Host Output <br>
+      <img width="500" height="146" alt="image" src="https://github.com/user-attachments/assets/b988c834-2707-4b2c-8439-f7f3411d7579" />
+      
+    </td>
+    
   </tr>
   <tr>
     <td>
