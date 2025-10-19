@@ -30,6 +30,8 @@
         </tr>
       </table>
     </td>
+  </tr>
+  <tr>
     <td>
       <table>
         <tr>
@@ -46,7 +48,6 @@
             <li>GetProductsByWeather</li>
             <li>GetProductsByTitle</li>
             <li>GetProductsByDescription</li>
-            
           </ul>
           </td>
         </tr>
