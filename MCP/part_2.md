@@ -7,6 +7,48 @@
 
 <img width="1273" height="542" alt="image" src="https://github.com/user-attachments/assets/3efe4e1e-2441-4a87-8185-6b5ade7ed5f8" />
 
+# Components
+
+<table>
+  <tr>
+    <td>MCP Servers</td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>
+          <b>AuthServer.py</b><br>
+          Uses https://fakestoreapi.com/auth/login to authenticate User.<br>
+          <b>Tools:</b><br>
+          <ul>
+            <li>Authenticate</li>
+            <li>UserProfile</li>
+            <li>Authorise</li>
+          </ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <td>
+          <b>ProductServer.py</b><br>
+          Uses [https://fakestoreapi.com/auth/login](https://fakestoreapi.com/products) and its variants to provide product information.<br>
+          <b>Tools:</b><br>
+          <ul>
+            <li>Authenticate</li>
+            <li>UserProfile</li>
+            <li>Authorise</li>
+          </ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
 
 # How to Launch
 <table>
