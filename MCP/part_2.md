@@ -77,16 +77,8 @@
       via Product MCP Server
     </td>
     <td>
-<img width="700" height="1030" alt="image" src="https://github.com/user-attachments/assets/d5806d37-bb3e-42ee-93f9-23317eadadc0" />
+      <img width="612" height="529" alt="image" src="https://github.com/user-attachments/assets/9acfb1a6-0934-4dce-8df8-426df0d64078" />
     </td>
-  </tr>
-  <tr>
-    <td>
-      
-    </td>
-    <td>
-    </td>
-    
   </tr>
 </table>
 
