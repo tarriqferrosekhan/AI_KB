@@ -38,9 +38,15 @@
           Uses [https://fakestoreapi.com/auth/login](https://fakestoreapi.com/products) and its variants to provide product information.<br>
           <b>Tools:</b><br>
           <ul>
-            <li>Authenticate</li>
-            <li>UserProfile</li>
-            <li>Authorise</li>
+            <li>GetProducts</li>
+            <li>GetProductsById</li>
+            <li>GetProductsByCategory</li>
+            <li>GetAllCategories</li>
+            <li>GetProductsBySeason</li>
+            <li>GetProductsByWeather</li>
+            <li>GetProductsByTitle</li>
+            <li>GetProductsByDescription</li>
+            
           </ul>
           </td>
         </tr>
