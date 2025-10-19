@@ -51,14 +51,14 @@
 <table>
   <tr>
     <td>UI Action</td>
-    <td>Output Screenshot</td>
+    <td>Output Screenshot UI and Servers (Host/MCP Servers)</td>
   </tr>
   <tr>
     <td>
       <b></b>Launch UI and Initial Screen</b>
     </td>
     <td>
-<img width="500" height="406" alt="image" src="https://github.com/user-attachments/assets/30c21be0-dc4a-4e80-8b36-b7bf11eebee8" />
+     <img width="596" height="538" alt="image" src="https://github.com/user-attachments/assets/6ba75a9d-f65c-4e4f-8d3f-a098798273b4" />
     </td>
   </tr>
   <tr>
