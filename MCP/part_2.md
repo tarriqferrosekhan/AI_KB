@@ -94,12 +94,9 @@
                   <li>"ProductsServer":{"url":"http://127.0.0.1:8003/sse"}</li>
                 </ul> 
               </li>
-              <li>
-                <ul>
                    <li><b>Use FastApi.Client to connect to Each Registered MCP servers</b></li>
                    <li><b>Get the list of MCP Tools from each MCP Server</b></li>
                    <li><b>If a Tool is REASONED by LLM , the respective tools is called and response returned to UI</b></li>
-                </ul>  
               </li>
             </ol>
           </td>
