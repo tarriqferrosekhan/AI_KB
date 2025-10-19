@@ -1,36 +1,5 @@
 
-
-# UI Demo
-
-<table>
-  <tr>
-    <td>
-    Launch UI and Initial Screen<br>
-<img width="500" height="406" alt="image" src="https://github.com/user-attachments/assets/30c21be0-dc4a-4e80-8b36-b7bf11eebee8" />
-    </td>
-    <td>
-      MCP Host Output <br>
-      <img width="500" height="146" alt="image" src="https://github.com/user-attachments/assets/b988c834-2707-4b2c-8439-f7f3411d7579" />
-      
-    </td>
-    
-  </tr>
-  <tr>
-    <td>
-      Fecthing Products From Fakestore API based on Season
-      via Product MCP Server
-    </td>
-    <td>
-      <img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/9739e087-80ec-48e6-a3f8-0e5d73506239" />
-      <br>
-<img width="700" height="1030" alt="image" src="https://github.com/user-attachments/assets/d5806d37-bb3e-42ee-93f9-23317eadadc0" />
-    </td>
-  </tr>
-    
-</table>
-
-
-
+# Launch MCP Servers and MCP Host via UI.py
 <table>
   <tr>
     <td>
@@ -69,5 +38,35 @@
     </td>
    </tr>
 </table>
+
+# UI Demo
+
+<table>
+  <tr>
+    <td>UI Action</td>
+    <td>Output Screenshot</td>
+  </tr>
+  <tr>
+    <td>
+      <b></b>Launch UI and Initial Screen</b>
+    </td>
+    <td>
+<img width="500" height="406" alt="image" src="https://github.com/user-attachments/assets/30c21be0-dc4a-4e80-8b36-b7bf11eebee8" />
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+      Fecthing Products From Fakestore API based on Season
+      via Product MCP Server
+    </td>
+    <td>
+<img width="700" height="1030" alt="image" src="https://github.com/user-attachments/assets/d5806d37-bb3e-42ee-93f9-23317eadadc0" />
+    </td>
+  </tr>
+</table>
+
+
+
+
 
 
