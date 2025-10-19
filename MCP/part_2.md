@@ -19,6 +19,8 @@
         <tr>
           <td>
           <b>AuthServer.py</b><br>
+          Transport: SSE<br>
+          Endpoint : http://127.0.0.1:8001 <br>
           Uses https://fakestoreapi.com/auth/login to authenticate User.<br>
           <b>Tools:</b><br>
           <ul>
@@ -37,6 +39,8 @@
         <tr>
           <td>
           <b>ProductServer.py</b><br>
+          Transport: SSE<br>
+          Endpoint : http://127.0.0.1:8003 <br>
           Uses [https://fakestoreapi.com/auth/login](https://fakestoreapi.com/products) and its variants to provide product information.<br>
           <b>Tools:</b><br>
           <ul>
@@ -48,6 +52,25 @@
             <li>GetProductsByWeather</li>
             <li>GetProductsByTitle</li>
             <li>GetProductsByDescription</li>
+          </ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+   <tr>
+    <td>
+      <table>
+        <tr>
+          <td>
+          <b>WeatherServer.py</b><br>
+          Transport: SSE<br>
+          Endpoint : http://127.0.0.1:8002 <br>
+          Uses [[https://fakestoreapi.com/auth/login](https://fakestoreapi.com/products)](https://api.weather.gov/) and its variants to provide Weather information.<br>
+          <b>Tools:</b><br>
+          <ul>
+            <li>get_forecast</li>
+            <li>get_alerts</li>
           </ul>
           </td>
         </tr>
