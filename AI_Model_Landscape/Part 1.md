@@ -1,4 +1,4 @@
-#Author : [Tarriq Ferrose Khan](www.linkedin.com/in/tarriq-ferrose-khan-ba527080) 
+#Author : [Tarriq Ferrose Khan](https://www.linkedin.com/in/tarriqferrosekhan/) 
 
 <img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/15c67450-0ed7-4deb-9375-3e7e04cb5f9b" />
 
