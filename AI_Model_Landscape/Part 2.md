@@ -241,6 +241,6 @@
  
 (To be Continued)
 
-Happy Learning
-Author : [Tarriq Ferrose Khan](www.linkedin.com/in/tarriq-ferrose-khan-ba527080) 
+Happy Learning 
+[Tarriq Ferrose Khan](https://www.linkedin.com/in/tarriqferrosekhan/)
 
