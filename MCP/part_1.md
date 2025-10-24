@@ -80,6 +80,4 @@
 
   <b>More to come on MCP!<b><br>.
   <b>Happy Learning!</b><br>
-  -<a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank">Tarriq Ferrose Khan</a>
-
-
+  -<a href="https://www.linkedin.com/in/tarriqferrosekhan/" target="_blank">Tarriq Ferrose Khan</a>
