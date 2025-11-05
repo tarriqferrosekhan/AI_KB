@@ -173,6 +173,28 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
        |->Cake  (0.8)-> Joint Prob("You Eat Cake") = 0.5 x 0.4 x 0.8=0.12
   </b>
 </pre>
-
+<hr>
+<h3>Deterministic Vs Probabilistic traversal (Just for understanding like Temperature setting in LLM)</h3>
+<ul>
+  <li><b>Deterministic Traversal</b><br>
+  Always selects the Highest probability words in each step (tie-break if equal.<br>
+  In the above tree if we strictly follow Deterministic Search we may always get "I love Cake" <br>
+  <b>As it is the Highest Probability value -> 0.18</b>
+  </li>
+  <li><b>Probabilistic Traversal</b><br>
+  For instance after first word "I", it can randomly pick "Love" (0.6) or Eat (0.4)<br>
+  Similarly in the next step can pick "Pizza" (0.4) or "Cake" (0.6)<br>
+  Over multiple runs the sentences generated can be :<br>
+  <ol type="1">
+    <li>"I Love Cake" (0.18) <b>Highly Likelay</b></li>
+    <li>"I Love Pizza" (0.12) <</li>
+    <li>"I Eat Cake" (0.04) </li>
+    <li>"You Eat Pizza" (0.03) <b>Less Likely</b></li>
+    
+  </ol>
+    
+   
+  </li>
+</ul>
 
   
