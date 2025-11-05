@@ -156,7 +156,7 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
 </li>
 </ul>
 <hr>
-<h3>How Generative Model Using Probability table :</h3>
+<h3>How Generative Model Using above Probability table :</h3>
 <pre>
   <b>
   |-I (0.5)
