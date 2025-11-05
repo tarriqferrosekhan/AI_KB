@@ -164,7 +164,6 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
     |->Eat (0.4)
        |->Pizza (0.3)-> Joint Prob("I Eat Pizza") = 0.5 x 0.4 x 0.3=0.06
        |->Cake  (0.7)-> Joint Prob("I Eat Cake") = 0.5 x 0.4 x 0.7=0.14
-    
   |-You (0.5)  
     |->Love (0.7)
        |->Pizza (0.5)-> Joint Prob("You Love Pizza") = 0.5 x 0.7 x 0.5=0.175
