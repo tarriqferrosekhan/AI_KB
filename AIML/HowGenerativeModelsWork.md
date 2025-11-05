@@ -225,52 +225,43 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
       <th>Model Type</th>
       <th>Core Idea</th>
       <th>Examples</th>
+      <th>Data Type / Modality</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>Autoregressive Models</strong></td>
-      <td>
-        Model the joint probability of data as a product of conditional probabilities:<br>
-        <code>p(x) = ∏<sub>i</sub> p(x<sub>i</sub> | x<sub>&lt;i&gt;</sub>)</code>.
-      </td>
+      <td>Model the joint probability of data as a product of conditional probabilities:<br>p(x) = ∏<sub>i</sub> p(x<sub>i</sub> | x<sub>&lt;i</sub>)</td>
       <td>GPT, PixelRNN, PixelCNN</td>
+      <td>Text, Images, Audio</td>
     </tr>
     <tr>
       <td><strong>Variational Autoencoders (VAEs)</strong></td>
-      <td>
-        Learn a latent variable <code>z</code> and reconstruct data using a decoder
-        <code>p<sub>θ</sub>(x|z)</code>. Training uses variational inference to approximate
-        <code>q<sub>ϕ</sub>(z|x)</code>.
-      </td>
+      <td>Learn a latent variable (z) and reconstruct data using a decoder (pθ(x|z)). Training uses variational inference to approximate qφ(z|x).</td>
       <td>VAE, β-VAE, CVAE</td>
+      <td>Images, Audio, Tabular</td>
     </tr>
     <tr>
       <td><strong>Generative Adversarial Networks (GANs)</strong></td>
-      <td>
-        Use two networks — a <em>generator</em> <code>G</code> that creates samples and a
-        <em>discriminator</em> <code>D</code> that distinguishes real from fake — trained adversarially.
-      </td>
+      <td>Use two networks — a <strong>generator</strong> (G) that creates samples and a <strong>discriminator</strong> (D) that distinguishes real from fake — trained adversarially.</td>
       <td>DCGAN, StyleGAN, CycleGAN</td>
+      <td>Images, Video, Audio</td>
     </tr>
     <tr>
       <td><strong>Diffusion Models</strong></td>
-      <td>
-        Learn to reverse a gradual noise-adding process; generation is done by iteratively denoising
-        random noise to form data.
-      </td>
+      <td>Learn to reverse a gradual noise-adding process; generation is done by iteratively denoising random noise to form data.</td>
       <td>DDPM, Stable Diffusion, Imagen</td>
+      <td>Images, Video, Multimodal</td>
     </tr>
     <tr>
       <td><strong>Normalizing Flows</strong></td>
-      <td>
-        Learn an invertible mapping between data and latent variables with exact, tractable likelihoods
-        via the change-of-variables formula.
-      </td>
+      <td>Learn an invertible mapping between data and latent variables with exact, tractable likelihoods via change-of-variables.</td>
       <td>RealNVP, Glow, NICE</td>
+      <td>Images, Audio</td>
     </tr>
   </tbody>
 </table>
+
 
 <hr>
 <section>
