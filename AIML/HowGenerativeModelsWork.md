@@ -1,6 +1,21 @@
-<b>Author:</b> <br>
-<a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank"><img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/bc2bb7dc-6855-4222-b866-a80524c31089" /></a>
 
+<h1>WIP:NOT PUBLISHED YET</h1>
+
+<hr>
+<ol type="1">
+<li>Introduction: What are generative models and why they matter.</li>
+<li>Generative vs. Discriminative (with clear Bayesian connection)</li>
+<li>Probability Refresher (already written)</li>
+<li>How Generative Models Learn Distributions</li>
+<li>Likelihood maximization</li>
+<li>Latent variables</li>
+<li>Types of Generative Models- Autoregressive, VAE, GAN, Diffusion, Flows</li>
+<li>Example: Text Generation via Chain Rule (current example)</li>
+<li>Sampling & Decoding Methods</li>
+<li>Applications, Limitations, and Ethics</li>
+<li>Conclusion</li>
+</ol>
+<hr>
 <h1>Overview How Generative Model Works </h1>
 Reference: Generative Versus Discriminative Models Topic from the book <a href="https://www.oreilly.com/library/view/deep-learning/9781491924570">Deep Learning Book</a> by Josh Patterson, Adam Gibson
 <br><br>
