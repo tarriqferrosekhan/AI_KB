@@ -25,13 +25,19 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
   </tr>
   <tr>
     <td>Focus</td>
-    <td>Tries to understand data and generate a likely output given an input.</td>
+    <td>Aims to learn the underlying data distribution 𝑝(𝑥) so they can generate new, realistic samples from it.
+    </td>
     <td>Provides classification or category for a given input</td>
   </tr>
    <tr>
     <td>How it learns</td>
     <td> <a href="https://en.wikipedia.org/wiki/Joint_probability_distribution">JOINT Probability distribution</a> <b>p(x, y)</b></td>
     <td> <a href="https://en.wikipedia.org/wiki/Conditional_probability_distribution">Conditional Probability</a> <b>p(x|y)</b></td>
+  </tr>
+  <tr>
+    <td>Caveat</td>
+    <td>Generative models can also perform classification (via Bayes’ rule: p(y∣x)∝p(x∣y)p(y))</td>
+    <td>Directly learn p(y∣x)</td>
   </tr>
   </table>
   <hr>
