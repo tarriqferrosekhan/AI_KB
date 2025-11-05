@@ -196,6 +196,6 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
   </li>
 </ul>
 <br>
- <b>More to come on MCP!<b><br>.
+ <b>More to come on Models!<b><br>.
   <b>Happy Learning!</b><br>
   -<a href="https://www.linkedin.com/in/tarriqferrosekhan/" target="_blank">Tarriq Ferrose Khan</a>
