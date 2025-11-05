@@ -274,18 +274,44 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
 
 <hr>
 <section>
-  <h2>3. Missing Mathematical and Learning Aspects</h2>
-
-  <h3>a. Likelihood Maximization</h3>
+  <h3>Likelihood Maximization</h3>
   <p>
     Generative models are trained by maximizing the <strong>likelihood</strong> of observed data.
     This means adjusting the model parameters <code>θ</code> so that the model assigns higher
     probability to real samples from the training data.
   </p>
-
-  <p><strong>Objective Function:</strong></
-
-      
+  <p><strong>Objective Function:</strong></p>
+  <pre><code>max<sub>θ</sub> ∑<sub>x ∈ data</sub> log p<sub>θ</sub>(x)</code></pre>
+  <p>
+    In practice, this optimization is performed using gradient descent. For example, in
+    autoregressive models (like GPT), the model predicts the next token given previous ones and
+    minimizes the <em>negative log-likelihood</em> (also known as cross-entropy loss).
+  </p>
+  <hr>
+  <h3>Latent Variables</h3>
+  <p>
+    Many generative models introduce <strong>latent variables</strong> — hidden representations
+    that capture underlying structure in the data. These variables, denoted as
+    <code>z</code>, represent factors such as style, content, or semantics that are not
+    directly observed but inferred by the model.
+  </p>
+  <p><strong>Latent Variable Formulation:</strong></p>
+  <pre><code>p(x) = ∫ p(x | z) · p(z) dz</code></pre>
+  <p>
+    Here, <code>p(z)</code> is a simple prior distribution (often Gaussian), and
+    <code>p(x | z)</code> is the decoder or generator that reconstructs data from the latent
+    code. The model learns to approximate this relationship through training:
+  </p>
+  <ul>
+    <li><strong>In VAEs</strong>: the model jointly learns an encoder <code>q<sub>ϕ</sub>(z|x)</code> and decoder <code>p<sub>θ</sub>(x|z)</code>.</li>
+    <li><strong>In GANs</strong>: the latent variable <code>z</code> is sampled from a known prior (e.g., <code>N(0, I)</code>), and the generator maps it to data space via <code>G(z)</code>.</li>
+    <li><strong>In Diffusion Models</strong>: the latent variable can represent a noisy intermediate step during the denoising process.</li>
+  </ul>
+  <p>
+    These formulations connect the probability theory (covered earlier) to how models actually
+    learn and generate new samples that follow the same distribution as real data.
+  </p>
+</section><br>
  <b>More to come on Models!<b><br>.
   <b>Happy Learning!</b><br>
   -<a href="https://www.linkedin.com/in/tarriqferrosekhan/" target="_blank">Tarriq Ferrose Khan</a>
