@@ -124,6 +124,7 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
         <tr><td>2</td><td>(none)</td><td>"Love"</td><td>P(Love|I)</td><td>0.6</td><td>0.5*0.6=0.3</td></tr>
         <tr><td>3</td><td>(none)</td><td>"Love"</td><td>P(Pizza|I,Love)</td><td>0.4</td><td>0.3*0.4=0.12</td></tr>
       </table>
+      <b>P("I Love Pizza") = 0.12</b>
     </li>
     <li><b>Step 3: Interpretation</b>
       <ul>
