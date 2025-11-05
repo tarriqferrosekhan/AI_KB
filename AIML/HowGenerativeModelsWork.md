@@ -18,14 +18,13 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
     <td> <a href="https://en.wikipedia.org/wiki/Conditional_probability_distribution">Conditional Probability</a> <b>p(x|y)</b></td>
   </tr>
   </table>
-  
-  <h3>Multiplicative , Additive Probability</h3><br>
-  We will dive into few fundamental concepts before discussing Joint probability
+  <hr>
+  <h3>We will quickly see few fundamental concepts before discussing Joint probability</h3>
   <ul>
     <li>
       <h4>Multiplicative Probability P(A and B)</h4>
       <ul>
-        <li>2 or more Independent Events occurs simultaneously: P(A and B) = P(A) x P(B) 
+        <li>2 or more Independent Events occurs simultaneously, <b>Formula: P(A and B) = P(A) x P(B)</b> 
           <ul>
           <li>Eg., Flipping a Fair Coin simultaneously and getting "HEADS": <br>
             P(Heads on Coin-1 and Coin-2)= P(Head on Coin-1) * P(Head on Coin-2)= (1/2) x (1/2)=0.25 (25% chance)
@@ -37,35 +36,75 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
     <li>
       <h4>Additive Probability P (A OR B) </h4>
     <ul>
-      <li>Mutually Exclusive Events: Probability(A or B) = Probability(A) + Probability(B) 
+      <li>Mutually Exclusive Events, <b>Formula: P(A or B) = P(A) + P(B) </b> 
         <ul>
           <li>Eg., Rolling a Die and find P(2) or P(4) = P(2 or 4) = P(2) + P(4) = (1/6)+(1/6)=0.33 (33% chance)
         </ul>
       </li>
-      <li>If Events are <b>not</b> Mutually Exclusive : Probability(A or B) = Probability(A) + Probability(B) - P( A and B) 
+      <li>If Events are <b>not</b> Mutually Exclusive, <b>Formula : P(A or B) = P(A) + P(B) - P( A and B)</b> 
       </li>
     </ul>
     </li>
     <li>
-      <h4>Conditional Probability (OR) </h4>
-    <ul>
-      <li>Mutually Exclusive Events: Probability(A or B) = Probability(A) + Probability(B) 
-        <ul>
-          <li>Eg., Rolling a Die and find P(2) or P(4) = P(2 or 4) = P(2) + P(4) = (1/6)+(1/6)=0.33 (33% chance)
-        </ul>
-      </li>
-      <li>If Events are <b>not</b> Mutually Exclusive : Probability(A or B) = Probability(A) + Probability(B) - P( A and B) 
-      </li>
-    </ul>
+  <h4>Conditional Probability (Given that...)</h4>
+  <ul>
+    <li>Definition: The probability of Event A occurring given that Event B has already occurred.  
+      <ul>
+        <li><b>Formula: P(A | B) = P(A and B) / P(B)</b></li>
+      </ul>
+    </li>
+    <li>Example: Suppose 30% of employees know Python, and 15% know both Python and SQL.  
+      <ul>
+        <li>P(Python | SQL) = P(Python and SQL) / P(SQL)</li>
+        <li>If P(SQL) = 0.25, then P(Python | SQL) = 0.15 / 0.25 = 0.6 (60% chance)</li>
+      </ul>
     </li>
   </ul>
-  <h3>Joint Probability</h3><br>
+      
+</li>
+<li>
+  <h4>Bayes' Theorem (Based on Prior Knowledge)</h4>
   <ul>
-    <li><b>Probability of 2 or more Events occurring at same time whether they are indepdent are not.</b></li>
-    <li><b>If Events are Independent:</b> P(A n B)= P(A) * P(B)</li>
-    <li><b>If Events are Dependent:</b> P(A n B)= P(A) * P(B|A)</li>
-    
-    
+    <li>Definition: Used to find the probability of an event based on prior knowledge of related conditions.  
+      <ul>
+        <li><b>Formula: P(A | B) = [ P(B | A) × P(A) ] / P(B)</b></li>
+      </ul>
+    </li>
+    <li>Example: Suppose 5% of patients have a disease, and a test correctly detects it 90% of the time.  
+      <ul>
+        <li>P(Disease) = 0.05, P(Positive | Disease) = 0.9, P(Positive) = 0.1</li>
+        <li>Then, P(Disease | Positive) = (0.9 × 0.05) / 0.1 = 0.45 (45% chance patient actually has the disease)</li>
+      </ul>
+    </li>
   </ul>
+</li>
+  </ul>
+  <hr>
+  <h3><u>Joint Probability</u></h3><br>
+ <ul>
+    <li>Definition: The probability of two events A and B occurring together.
+      <ul>
+        <li>Formula (General): P(A and B) = P(A) × P(B | A)</li>
+      </ul>
+    </li>
+    <li><b>Case 1: With Replacement (Independent Events)</b>
+      <ul>
+        <li>After the first draw, the card is replaced — probabilities stay the same.</li>
+        <li>Example: Drawing 2 Aces from a deck of 52 cards with replacement.</li>
+        <li>P(A₁) = 4/52, P(A₂) = 4/52</li>
+        <li>P(A₁ and A₂) = (4/52) × (4/52) = 1/169 ≈ 0.0059 (0.59%)</li>
+      </ul>
+    </li>
+    <li><b>Case 2: Without Replacement (Dependent Events)</b>
+      <ul>
+        <li>After the first draw, the card is not replaced — probabilities change.</li>
+        <li>Example: Drawing 2 Aces from a deck of 52 cards without replacement.</li>
+        <li>P(A₁) = 4/52, P(A₂ | A₁) = 3/51</li>
+        <li>P(A₁ and A₂) = (4/52) × (3/51) = 1/221 ≈ 0.0045 (0.45%)</li>
+      </ul>
+    </li>
+  </ul>
+</li>
+</ul>
   
   
