@@ -129,7 +129,7 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
 </li>
 </ul>
 <hr>
-<h3>Joint Probability in Text Generation</h3>
+<h3>Joint Probability in Text Generation (AutoRegressive Sequence)</h3>
 <ul>
   <li>
   <h4>Joint Probability in Text Generation ("I love pizza")</h4>
@@ -218,7 +218,74 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
   </ol>
   </li>
 </ul>
-<br>
+<hr>
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Model Type</th>
+      <th>Core Idea</th>
+      <th>Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Autoregressive Models</strong></td>
+      <td>
+        Model the joint probability of data as a product of conditional probabilities:<br>
+        <code>p(x) = ∏<sub>i</sub> p(x<sub>i</sub> | x<sub>&lt;i&gt;</sub>)</code>.
+      </td>
+      <td>GPT, PixelRNN, PixelCNN</td>
+    </tr>
+    <tr>
+      <td><strong>Variational Autoencoders (VAEs)</strong></td>
+      <td>
+        Learn a latent variable <code>z</code> and reconstruct data using a decoder
+        <code>p<sub>θ</sub>(x|z)</code>. Training uses variational inference to approximate
+        <code>q<sub>ϕ</sub>(z|x)</code>.
+      </td>
+      <td>VAE, β-VAE, CVAE</td>
+    </tr>
+    <tr>
+      <td><strong>Generative Adversarial Networks (GANs)</strong></td>
+      <td>
+        Use two networks — a <em>generator</em> <code>G</code> that creates samples and a
+        <em>discriminator</em> <code>D</code> that distinguishes real from fake — trained adversarially.
+      </td>
+      <td>DCGAN, StyleGAN, CycleGAN</td>
+    </tr>
+    <tr>
+      <td><strong>Diffusion Models</strong></td>
+      <td>
+        Learn to reverse a gradual noise-adding process; generation is done by iteratively denoising
+        random noise to form data.
+      </td>
+      <td>DDPM, Stable Diffusion, Imagen</td>
+    </tr>
+    <tr>
+      <td><strong>Normalizing Flows</strong></td>
+      <td>
+        Learn an invertible mapping between data and latent variables with exact, tractable likelihoods
+        via the change-of-variables formula.
+      </td>
+      <td>RealNVP, Glow, NICE</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+<section>
+  <h2>3. Missing Mathematical and Learning Aspects</h2>
+
+  <h3>a. Likelihood Maximization</h3>
+  <p>
+    Generative models are trained by maximizing the <strong>likelihood</strong> of observed data.
+    This means adjusting the model parameters <code>θ</code> so that the model assigns higher
+    probability to real samples from the training data.
+  </p>
+
+  <p><strong>Objective Function:</strong></
+
+      
  <b>More to come on Models!<b><br>.
   <b>Happy Learning!</b><br>
   -<a href="https://www.linkedin.com/in/tarriqferrosekhan/" target="_blank">Tarriq Ferrose Khan</a>
