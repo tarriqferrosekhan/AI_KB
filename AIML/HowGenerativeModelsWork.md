@@ -149,12 +149,31 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
        <tr><td>3</td><td>W1,W2="YOU EAT"</td><td>CAKE</td><td>0.8</td></tr> 
      </table>
      <br>
-    
-       
    </li>
   </ul>
 </li>
 </ul>
 <hr>
-<h3>How Generative Model Uses Such table :</h3>
+<h3>How Generative Model Uses Conditional Probability table :</h3>
+<pre>
+  <b>
+  |-I (0.5)
+    |->Love (0.6)
+       |->Pizza (0.4)-> Joint Prob("I Love Pizza") = 0.5 x 0.6 x 0.4=0.12
+       |->Cake  (0.6)-> Joint Prob("I Love Cake") = 0.5 x 0.6 x 0.6=0.18
+    |->Eat (0.4)
+       |->Pizza (0.3)-> Joint Prob("I Eat Pizza") = 0.5 x 0.4 x 0.3=0.06
+       |->Cake  (0.7)-> Joint Prob("I Eat Cake") = 0.5 x 0.4 x 0.7=0.14
+    
+  |-You (0.5)  
+    |->Love (0.7)
+       |->Pizza (0.5)-> Joint Prob("You Love Pizza") = 0.5 x 0.7 x 0.5=0.175
+       |->Cake  (0.5)-> Joint Prob("You Love Cake") = 0.5 x 0.7 x 0.5=0.175
+    |->Eat (0.3)
+       |->Pizza (0.2)-> Joint Prob("You Eat Pizza") = 0.5 x 0.3 x 0.2=0.03
+       |->Cake  (0.8)-> Joint Prob("You Eat Cake") = 0.5 x 0.4 x 0.8=0.12
+  </b>
+</pre>
+
+
   
