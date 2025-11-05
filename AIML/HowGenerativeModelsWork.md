@@ -1,5 +1,7 @@
+<b>Author:</b> <br>
+<a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank"><img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/bc2bb7dc-6855-4222-b866-a80524c31089" /></a>
 
-<h1>How Generative Model Works</h1>
+<h1>Overview How Generative Model Works </h1>
 Reference: Generative Versus Discriminative Models Topic from the book <a href="https://www.oreilly.com/library/view/deep-learning/9781491924570">Deep Learning Book</a> by Josh Patterson, Adam Gibson
 <br><br>
 <table>
@@ -190,11 +192,10 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
     <li>"I Love Pizza" (0.12) <</li>
     <li>"I Eat Cake" (0.04) </li>
     <li>"You Eat Pizza" (0.03) <b>Less Likely</b></li>
-    
   </ol>
-    
-   
   </li>
 </ul>
-
-  
+<br>
+ <b>More to come on MCP!<b><br>.
+  <b>Happy Learning!</b><br>
+  -<a href="https://www.linkedin.com/in/tarriqferrosekhan/" target="_blank">Tarriq Ferrose Khan</a>
