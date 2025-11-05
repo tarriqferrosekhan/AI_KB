@@ -1,20 +1,5 @@
 
 <h1>WIP:NOT PUBLISHED YET</h1>
-
-<hr>
-<ol type="1">
-<li>Introduction: What are generative models and why they matter.</li>
-<li>Generative vs. Discriminative (with clear Bayesian connection)</li>
-<li>Probability Refresher (already written)</li>
-<li>How Generative Models Learn Distributions</li>
-<li>Likelihood maximization</li>
-<li>Latent variables</li>
-<li>Types of Generative Models- Autoregressive, VAE, GAN, Diffusion, Flows</li>
-<li>Example: Text Generation via Chain Rule (current example)</li>
-<li>Sampling & Decoding Methods</li>
-<li>Applications, Limitations, and Ethics</li>
-<li>Conclusion</li>
-</ol>
 <hr>
 <h1>Overview How Generative Model Works </h1>
 Reference: Generative Versus Discriminative Models Topic from the book <a href="https://www.oreilly.com/library/view/deep-learning/9781491924570">Deep Learning Book</a> by Josh Patterson, Adam Gibson
@@ -306,3 +291,19 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
  <b>More to come on Models!<b><br>.
   <b>Happy Learning!</b><br>
   -<a href="https://www.linkedin.com/in/tarriqferrosekhan/" target="_blank">Tarriq Ferrose Khan</a>
+
+<hr>
+<hr>
+<ol type="1">
+<li>Introduction: What are generative models and why they matter.</li>
+<li>Generative vs. Discriminative (with clear Bayesian connection)</li>
+<li>Probability Refresher (already written)</li>
+<li>How Generative Models Learn Distributions</li>
+<li>Likelihood maximization</li>
+<li>Latent variables</li>
+<li>Types of Generative Models- Autoregressive, VAE, GAN, Diffusion, Flows</li>
+<li>Example: Text Generation via Chain Rule (current example)</li>
+<li>Sampling & Decoding Methods</li>
+<li>Applications, Limitations, and Ethics</li>
+<li>Conclusion</li>
+</ol>
