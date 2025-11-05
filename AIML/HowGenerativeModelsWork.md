@@ -121,18 +121,40 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
         <tr><td>Step</td><td>Condition</td><td>Word Chosen</td><td>Probability</td><td>Hypothetical Probability Assigned</td><td>Cumulative Probability</td></tr>
         <tr><td>1</td><td>(none)</td><td>"I"</td><td>P(I)</td><td>0.5</td><td>0.5</td></tr>
         <tr><td>2</td><td>(none)</td><td>"Love"</td><td>P(Love|I)</td><td>0.6</td><td>0.5*0.6=0.3</td></tr>
-        <tr><td>3</td><td>(none)</td><td>"Love"</td><td>P(Pizza|I,Love)</td><td>0.4</td><td>0.3*0.4=0.12</td></tr>
+        <tr><td>3</td><td>(none)</td><td>"Love"</td><td>P(Pizza|I,Love)</td><td>0.4</td><td> <b><u>P("I Love Pizza") =</u></b>0.3*0.4=0.12</td></tr>
       </table>
-      <b>P("I Love Pizza") = 0.12</b>
     </li>
-    <li><b>Step 3: Interpretation</b>
-      <ul>
-        <li>The model multiplies the conditional probabilities of each word as it generates the sequence.</li>
-        <li>Even if words like "love" or "pizza" are common, their combination as a specific ordered sequence has a smaller joint probability.</li>
-        <li>Higher joint probability sequences are more likely to appear as generated outputs.</li>
-      </ul>
-    </li>
+   <li>
+     <b>Suppose we have a tiny vocabulary as below and their probabilities in the following table: </b><br>
+     <ul>
+       <li>"I Love Pizza"</li>
+       <li>"I Eat Cake"</li>
+       <li>"You Love Pizza"</li>
+     </ul><br>
+     <table>
+       <tr><td>Step</td><td>Condition</td><td>Next Word Options</td><td>Probability</td></tr>
+       <tr><td>1</td><td>NONE</td><td>I</td><td>0.5</td></tr>
+       <tr><td>1</td><td>NONE</td><td>YOU</td><td>0.5</td></tr>
+       <tr><td>2</td><td>W1="I"</td><td>LOVE</td><td>0.6</td></tr>
+       <tr><td>2</td><td>W1="I"</td><td>EAT</td><td>0.4</td></tr>
+       <tr><td>2</td><td>W1="YOU"</td><td>LOVE</td><td>0.7</td></tr>
+       <tr><td>2</td><td>W1="YOU"</td><td>EAT</td><td>0.3</td></tr>
+       <tr><td>3</td><td>W1,W2="I LOVE"</td><td>PIZZA</td><td>0.4</td></tr>
+       <tr><td>3</td><td>W1,W2="I LOVE"</td><td>CAKE</td><td>0.6</td></tr>
+       <tr><td>3</td><td>W1,W2="I EAT"</td><td>PIZZA</td><td>0.3</td></tr>
+       <tr><td>3</td><td>W1,W2="I EAT"</td><td>CAKE</td><td>0.7</td></tr> 
+        <tr><td>3</td><td>W1,W2="YOU LOVE"</td><td>PIZZA</td><td>0.5</td></tr>
+       <tr><td>3</td><td>W1,W2="YOU LOVE"</td><td>CAKE</td><td>0.5</td></tr>
+       <tr><td>3</td><td>W1,W2="YOU EAT"</td><td>PIZZA</td><td>0.2</td></tr>
+       <tr><td>3</td><td>W1,W2="YOU EAT"</td><td>CAKE</td><td>0.8</td></tr> 
+     </table>
+     <br>
+    
+       
+   </li>
   </ul>
 </li>
 </ul>
+<hr>
+<h3>How Generative Model Uses Such table :</h3>
   
