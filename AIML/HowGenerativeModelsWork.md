@@ -128,6 +128,8 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
     </li>
    <li>
      <b>Suppose we have a tiny vocabulary as below and their probabilities in the following table: </b><br>
+     This table with hypothetical probabilities is for illustration & doesn’t reflect real training, <br>
+     where probabilities are learned via maximum likelihood.
      <ul>
        <li>"I Love Pizza"</li>
        <li>"I Eat Cake"</li>
@@ -172,7 +174,7 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
        |->Cake  (0.5)-> Joint Prob("You Love Cake") = 0.5 x 0.7 x 0.5=0.175
     |->Eat (0.3)
        |->Pizza (0.2)-> Joint Prob("You Eat Pizza") = 0.5 x 0.3 x 0.2=0.03
-       |->Cake  (0.8)-> Joint Prob("You Eat Cake") = 0.5 x 0.4 x 0.8=0.12
+       |->Cake  (0.8)-> Joint Prob("You Eat Cake") = 0.5 x 0.3 x 0.8=0.12
   </b>
 </pre>
 <hr>
@@ -188,7 +190,7 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
   Similarly in the next step can pick "Pizza" (0.4) or "Cake" (0.6)<br>
   Over multiple runs the sentences generated can be :<br>
   <ol type="1">
-    <li>"I Love Cake" (0.18) <b>Highly Likelay</b></li>
+    <li>"I Love Cake" (0.18) <b>Highly Likely</b></li>
     <li>"I Love Pizza" (0.12) <</li>
     <li>"I Eat Cake" (0.04) </li>
     <li>"You Eat Pizza" (0.03) <b>Less Likely</b></li>
