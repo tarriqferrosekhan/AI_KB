@@ -106,5 +106,40 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
   </ul>
 </li>
 </ul>
-  
+<hr>
+<h3>Joint Probability in Text Generation</h3>
+<ul>
+  <li>
+  <h4>Joint Probability in Text Generation ("I love pizza")</h4>
+  <ul>
+    <li>Definition: In generative models, the probability of generating a complete text sequence is the product of probabilities of each word conditioned on the previous ones.
+      <ul>
+        <li>Formula: P(I, love, pizza) = P(I) × P(love | I) × P(pizza | I, love)</li>
+      </ul>
+    </li>
+    <li><b>Step 1: Assign Hypothetical Probabilities</b>
+      <ul>
+        <li>P(I) = 0.10 → Probability that a sentence starts with "I"</li>
+        <li>P(love | I) = 0.30 → Probability that the next word is "love" given "I"</li>
+        <li>P(love) = 0.08 → Overall (independent) probability of "love"</li>
+        <li>P(pizza | I, love) = 0.20 → Probability that the next word is "pizza" given "I love"</li>
+        <li>P(pizza) = 0.05 → Overall (independent) probability of "pizza"</li>
+      </ul>
+    </li>
+    <li><b>Step 2: Calculate Joint Probability</b>
+      <ul>
+        <li>P(I, love, pizza) = 0.10 × 0.30 × 0.20 = 0.006</li>
+        <li><b>Result:</b> The probability of generating the sequence "I love pizza" = <b>0.006 (0.6%)</b></li>
+      </ul>
+    </li>
+    <li><b>Step 3: Interpretation</b>
+      <ul>
+        <li>The model multiplies the conditional probabilities of each word as it generates the sequence.</li>
+        <li>Even if words like "love" or "pizza" are common, their combination as a specific ordered sequence has a smaller joint probability.</li>
+        <li>Higher joint probability sequences are more likely to appear as generated outputs.</li>
+      </ul>
+    </li>
+  </ul>
+</li>
+</ul>
   
