@@ -118,19 +118,12 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
       </ul>
     </li>
     <li><b>Step 1: Assign Hypothetical Probabilities</b>
-      <ul>
-        <li>P(I) = 0.10 → Probability that a sentence starts with "I"</li>
-        <li>P(love | I) = 0.30 → Probability that the next word is "love" given "I"</li>
-        <li>P(love) = 0.08 → Overall (independent) probability of "love"</li>
-        <li>P(pizza | I, love) = 0.20 → Probability that the next word is "pizza" given "I love"</li>
-        <li>P(pizza) = 0.05 → Overall (independent) probability of "pizza"</li>
-      </ul>
-    </li>
-    <li><b>Step 2: Calculate Joint Probability</b>
-      <ul>
-        <li>P(I, love, pizza) = 0.10 × 0.30 × 0.20 = 0.006</li>
-        <li><b>Result:</b> The probability of generating the sequence "I love pizza" = <b>0.006 (0.6%)</b></li>
-      </ul>
+      <table>
+        <tr><td>Step</td><td>Condition</td><td>Word Chosen</td><td>Probability</td><td>Hypothetical Probability Assigned</td><td>Cumulative Probability</td></tr>
+        <tr><td>1</td><td>(none)</td><td>"I"</td><td>P(I)</td><td>0.5</td><td>0.5</td></tr>
+        <tr><td>2</td><td>(none)</td><td>"Love"</td><td>P(Love|I)</td><td>0.6</td><td>0.5*0.6=0.3</td></tr>
+        <tr><td>3</td><td>(none)</td><td>"Love"</td><td>P(Pizza|I,Love)</td><td>0.4</td><td>0.3*0.4=0.12</td></tr>
+      </table>
     </li>
     <li><b>Step 3: Interpretation</b>
       <ul>
