@@ -257,7 +257,7 @@
 
 ### AI Tools by XPloria: https://www.aixploria.com/en/ultimate-list-ai/
 
-**To be Continued**
+**<a href="https://github.com/tarriqferrosekhan/AI_KB/blob/main/AI_Model_Landscape/Part%202.md">Part 2</a>**
 
 Happy Learning 
 [Tarriq Ferrose Khan](https://www.linkedin.com/in/tarriqferrosekhan/)
