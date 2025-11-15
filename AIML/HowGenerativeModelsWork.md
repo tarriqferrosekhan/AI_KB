@@ -1,9 +1,12 @@
 
 <h1>WIP:NOT PUBLISHED YET</h1>
 <hr>
-<h1>Overview How Generative Model Works - Autoregressive Sequence Model</h1>
-Reference: Generative Versus Discriminative Models Topic from the book <a href="https://www.oreilly.com/library/view/deep-learning/9781491924570">Deep Learning Book</a> by Josh Patterson, Adam Gibson
-<br><br>
+<h2>What Are Generative Models?</h2>
+Generative models learn the probability distribution of the data p(x) or the joint distribution p(x,y).
+After learning this distribution, they can sample from it to create new outputs.
+
+<hr>
+<h2>Generative Vs Discriminative Models </h2>
 <table>
   <tr>
     <td><b>Attribute</b></td><td><b>Generative Models</b></td><td><b>Discriminative Model</b></td>
@@ -26,6 +29,64 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
   </tr>
   </table>
   <hr>
+  <h3>Types of Generative Models- Autoregressive, VAE, GAN, Diffusion, Flows </h3>
+
+  <table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <td>Model Type</td>
+      <td>What It Learns</td>
+      <td>How It Learns</td>
+      <td>How It Generates</td>
+      <td>Examples</td>
+      <td>Data Type / Modality</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Autoregressive Models</strong></td>
+      <td>Joint distribution via sequential conditionals</td><td>Model the joint probability of data as a product of conditional probabilities:<br>p(x) = ∏<sub>i</sub> p(x<sub>i</sub> | x<sub>&lt;i</sub>)</td><td>Predicts next token/value step-by-step</td>
+      <td>GPT, PixelRNN, PixelCNN</td>
+      <td>Text, Images, Audio</td>
+    </tr>
+    <tr>
+      <td><strong>Variational Autoencoders (VAEs)</strong></td>
+      <td>Learns latent variable model p(x,z)</td>
+      <td>Learn a latent variable (z) and reconstruct data using a decoder (pθ(x|z)). Training uses variational inference to approximate qφ(z|x).</td>
+      <td>Sample latent z and decode to data</td>
+      <td>VAE, β-VAE, CVAE</td>
+      <td>Images, Audio, Tabular</td>
+    </tr>
+    <tr>
+      <td><strong>Generative Adversarial Networks (GANs)</strong></td>
+      <td class="muted">Implicit data distribution via adversarial learning</td>
+      <td>Use two networks — a <strong>generator</strong> (G) that creates samples and a <strong>discriminator</strong> (D) that distinguishes real from fake — trained adversarially.</td>
+      <td class="muted">Generator maps random noise → data</td>
+      <td>DCGAN, StyleGAN, CycleGAN</td>
+      <td>Images, Video, Audio</td>
+    </tr>
+    <tr>
+      <td><strong>Diffusion Models</strong></td>
+      <td class="muted">Reverse process of removing added noise</td>
+      <td>Learn to reverse a gradual noise-adding process; generation is done by iteratively denoising random noise to form data.</td>
+      <td class="muted">Start from noise and iteratively denoise to obtain data</td>
+      <td>DDPM, Stable Diffusion, Imagen</td>
+      <td>Images, Video, Multimodal</td>
+    </tr>
+    <tr>
+      <td><strong>Normalizing Flows</strong></td>
+      <td class="muted">Exact invertible mapping between noise and data</td>
+      <td>Learn an invertible mapping between data and latent variables with exact, tractable likelihoods via change-of-variables.</td>
+      <td class="muted">Apply invertible transforms to noise to get data</td>
+      <td>RealNVP, Glow, NICE</td>
+      <td>Images, Audio</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h4>:There are other variants and other types of Generative Models, but discussed the most popular ones above</h4>
+  <hr>
+  <h2>Probability Refresher</h2> 
   <h3>We will quickly see few fundamental concepts before discussing Joint probability</h3>
   <ul>
     <li>
@@ -114,7 +175,7 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
 </li>
 </ul>
 <hr>
-<h3>Joint Probability in Text Generation (AutoRegressive Sequence)</h3>
+<h2>AutoRegressive Sequence Model in Action </h2>
 <ul>
   <li>
   <h4>Joint Probability in Text Generation ("I love pizza")</h4>
@@ -164,7 +225,7 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
 </li>
 </ul>
 <hr>
-<h3>How Generative Model Using above Probability table :</h3>
+<h3>How Auto Regressive Sequence Model Uses above Probability table :</h3>
 <pre>
   <b>
   |-I (0.5)
@@ -219,51 +280,6 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
   </li>
 </ul>
 <hr>
-<table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Model Type</th>
-      <th>Core Idea</th>
-      <th>Examples</th>
-      <th>Data Type / Modality</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Autoregressive Models</strong></td>
-      <td>Model the joint probability of data as a product of conditional probabilities:<br>p(x) = ∏<sub>i</sub> p(x<sub>i</sub> | x<sub>&lt;i</sub>)</td>
-      <td>GPT, PixelRNN, PixelCNN</td>
-      <td>Text, Images, Audio</td>
-    </tr>
-    <tr>
-      <td><strong>Variational Autoencoders (VAEs)</strong></td>
-      <td>Learn a latent variable (z) and reconstruct data using a decoder (pθ(x|z)). Training uses variational inference to approximate qφ(z|x).</td>
-      <td>VAE, β-VAE, CVAE</td>
-      <td>Images, Audio, Tabular</td>
-    </tr>
-    <tr>
-      <td><strong>Generative Adversarial Networks (GANs)</strong></td>
-      <td>Use two networks — a <strong>generator</strong> (G) that creates samples and a <strong>discriminator</strong> (D) that distinguishes real from fake — trained adversarially.</td>
-      <td>DCGAN, StyleGAN, CycleGAN</td>
-      <td>Images, Video, Audio</td>
-    </tr>
-    <tr>
-      <td><strong>Diffusion Models</strong></td>
-      <td>Learn to reverse a gradual noise-adding process; generation is done by iteratively denoising random noise to form data.</td>
-      <td>DDPM, Stable Diffusion, Imagen</td>
-      <td>Images, Video, Multimodal</td>
-    </tr>
-    <tr>
-      <td><strong>Normalizing Flows</strong></td>
-      <td>Learn an invertible mapping between data and latent variables with exact, tractable likelihoods via change-of-variables.</td>
-      <td>RealNVP, Glow, NICE</td>
-      <td>Images, Audio</td>
-    </tr>
-  </tbody>
-</table>
-
-
-<hr>
 <section>
   <h3>Likelihood Maximization</h3>
   <p>
@@ -308,6 +324,8 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
   -<a href="https://www.linkedin.com/in/tarriqferrosekhan/" target="_blank">Tarriq Ferrose Khan</a>
 
 <hr>
+Refernce(s):
+Generative Versus Discriminative Models Topic from the book <a href="https://www.oreilly.com/library/view/deep-learning/9781491924570">Deep Learning Book</a> by Josh Patterson, Adam Gibson
 <hr>
 <ol type="1">
 <li>Introduction: What are generative models and why they matter.</li>
