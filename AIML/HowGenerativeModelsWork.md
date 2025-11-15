@@ -1,7 +1,7 @@
 
 <h1>WIP:NOT PUBLISHED YET</h1>
 <hr>
-<h1>Overview How Generative Model Works </h1>
+<h1>Overview How Generative Model Works - Autoregressive Sequence Model</h1>
 Reference: Generative Versus Discriminative Models Topic from the book <a href="https://www.oreilly.com/library/view/deep-learning/9781491924570">Deep Learning Book</a> by Josh Patterson, Adam Gibson
 <br><br>
 <table>
@@ -10,7 +10,7 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
   </tr>
   <tr>
     <td>Focus</td>
-    <td>Aims to learn the underlying data distribution 𝑝(𝑥) so they can generate new, realistic samples from it.
+    <td>Generative models learn joint distribution p(x,y) OR model p(x) alone depending on type so they can generate new, realistic samples from it.
     </td>
     <td>Provides classification or category for a given input</td>
   </tr>
@@ -127,9 +127,9 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
     <li><b>Step 1: Assign Hypothetical Probabilities</b>
       <table>
         <tr><td>Step</td><td>Condition</td><td>Word Chosen</td><td>Probability</td><td>Hypothetical Probability Assigned</td><td>Cumulative Probability</td></tr>
-        <tr><td>1</td><td>(none)</td><td>"I"</td><td>P(I)</td><td>0.5</td><td>0.5</td></tr>
-        <tr><td>2</td><td>(none)</td><td>"Love"</td><td>P(Love|I)</td><td>0.6</td><td>0.5*0.6=0.3</td></tr>
-        <tr><td>3</td><td>(none)</td><td>"Love"</td><td>P(Pizza|I,Love)</td><td>0.4</td><td> <b><u>P("I Love Pizza") =</u></b>0.3*0.4=0.12</td></tr>
+        <tr><td>1</td><td>(start-of-sequence)</td><td>"I"</td><td>P(I)</td><td>0.5</td><td>0.5</td></tr>
+        <tr><td>2</td><td>(previous token)</td><td>"Love"</td><td>P(Love|I)</td><td>0.6</td><td>0.5*0.6=0.3</td></tr>
+        <tr><td>3</td><td>(previous 2 tokens)</td><td>"Love"</td><td>P(Pizza|I,Love)</td><td>0.4</td><td> <b><u>P("I Love Pizza") =</u></b>0.3*0.4=0.12</td></tr>
       </table>
     </li>
    <li>
@@ -183,6 +183,21 @@ Reference: Generative Versus Discriminative Models Topic from the book <a href="
        |->Cake  (0.8)-> Joint Prob("You Eat Cake") = 0.5 x 0.3 x 0.8=0.12
   </b>
 </pre>
+<table>
+  <tr>
+    <td colspan="2" style="text-align:center"><b>Auto Regressive Sequence</b></td>
+  </tr>
+<tr>
+  <td>
+<img width="400" height="300" alt="ProbTree-I" src="https://github.com/user-attachments/assets/3a81439b-449e-43dd-ae82-6250a9d4450c" />
+  </td>
+  <td>
+    <img width="400" height="300" alt="ProbTree-You" src="https://github.com/user-attachments/assets/1dfcb63c-f4c5-4214-a765-bd29e7187f8b" />
+
+  </td>
+</tr>
+</table>
+
 <hr>
 <h3>Deterministic Vs Probabilistic traversal (Just for understanding like Temperature setting in LLM)</h3>
 <ul>
