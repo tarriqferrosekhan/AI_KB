@@ -246,7 +246,7 @@ After learning this distribution, they can sample from it to create new outputs.
 </pre>
 <table>
   <tr>
-    <td colspan="2" style="text-align:center"><b>Auto Regressive Sequence</b></td>
+    <td colspan="2" style="text-align:center"><b>Auto Regressive Sequence Modeling</b></td>
   </tr>
 <tr>
   <td>
