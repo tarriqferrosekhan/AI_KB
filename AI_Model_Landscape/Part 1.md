@@ -1,7 +1,6 @@
 #Author : [Tarriq Ferrose Khan](https://www.linkedin.com/in/tarriqferrosekhan/) 
 
-<img width="806" height="326" alt="image" src="https://github.com/user-attachments/assets/15c67450-0ed7-4deb-9375-3e7e04cb5f9b" />
-
+<a href="https://www.linkedin.com/in/tarriq-ferrose-khan-ba527080" target="_blank"><img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/bc2bb7dc-6855-4222-b866-a80524c31089" /></a>
 
 # Deep Dive into Gen AI & Large Language Models (Part 1)
 
