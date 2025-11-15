@@ -6,7 +6,9 @@
 Generative models learn the probability distribution of the data p(x) or the joint distribution p(x,y).
 After learning this distribution, they can sample from it to create new outputs.
 <hr>
-<h2>Generative Vs Discriminative Models </h2>
+<h2>Generative Vs Discriminative Models </h2><br>
+<img width="300" height="300" alt="GenerativevsDiscriminative" src="https://github.com/user-attachments/assets/dec3c961-bff8-4864-9cc8-e64a3b61c459" />
+
 <table>
   <tr>
     <td><b>Attribute</b></td><td><b>Generative Models</b></td><td><b>Discriminative Model</b></td>
